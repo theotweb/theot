@@ -9,11 +9,12 @@ body {background-color: #E8E4DD}
 ul.header-images {
   display: flex;
   flex-wrap: wrap;
+  gap:0%;
   padding-left:0px;
 }
 
 li.header-img {
-  height: 90vh;
+  
   flex-grow: 1;
   list-style-type: none
 }
@@ -54,7 +55,7 @@ div.theot-body {
 
 a.decorated {
   text-decoration: none;
-  color: rgb(61, 111, 88);
+  color: rgb(5, 135, 75);
   padding:5px;
 }
 a.decorated:hover {
@@ -90,3 +91,8 @@ nav.masthead {
    margin: auto; 
    height:200px;
 }
+
+p.juicy-quote { 
+  font-family: "Lucida Handwriting", cursive;
+  font-size:150%;
+ }
