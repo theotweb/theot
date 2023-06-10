@@ -93,6 +93,14 @@ nav.masthead {
 }
 
 p.juicy-quote { 
-  font-family: "Lucida Handwriting", cursive;
+  font-family: "Apple Chancery", "American Typewriter", serif;
   font-size:150%;
  }
+
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
