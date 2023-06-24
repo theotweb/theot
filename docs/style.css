@@ -26,6 +26,7 @@ img {
   vertical-align: bottom;
 }
 
+
 .hdr-img-container {
   position: relative;
 }
@@ -93,7 +94,7 @@ nav.masthead {
 }
 
 p.juicy-quote { 
-  font-family: "Apple Chancery", "American Typewriter", serif;
+  font-family: "Apple Chancery", "American Typewriter", "Georgia", serif;
   font-size:150%;
  }
 
@@ -104,3 +105,31 @@ p.juicy-quote {
   align-items: center;
   justify-content: right;
 }
+
+.reports-type1-charts-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.reports-type1-charts-container > div {
+  width: 150;
+  margin: 10px;
+  text-align: center;
+  margin-top:auto;
+  margin-bottom: auto;
+}
+
+.reports-type2-charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+}
+
+.reports-type2-charts-container > div {
+  width: 150;
+  margin: 10px;
+  text-align: center;
+  margin-top:auto;
+  margin-bottom: auto;
+}
+
