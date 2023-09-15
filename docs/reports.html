@@ -8,15 +8,15 @@
 		<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 		<link rel="stylesheet" href="style.css">
-		<script src="utility.js"></script>
 
 	  </head>
+
 	  <body class="p-3 m-0 border-0 bd-example">
+
+		<!-- BEGIN HEADER -->
 
 		<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark masthead">
 		  <div class="container-fluid">
-			
-			<!-- <span style="font-size: 400%;">THEOT</span><br/> -->
 
 				<!-- It has to have something here for the nav to float right -->
 				<span style="width:600px; height:100px;">&nbsp;</span>
@@ -27,25 +27,24 @@
 			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			      <span class="navbar-toggler-icon"></span>
 			    </button>
-			    <div class="collapse navbar-collapse gx-3" id="navbarNavDropdown">
+
+			    <div class="theot-header">
+			    	<a href="index.html"><img src="img/theot-logo-white.png"></a>
+			    </div>
+
+			    <div style="position:relative;top:50px;" class="collapse navbar-collapse gx-3" id="navbarNavDropdown">
 			      <ul class="navbar-nav gx-3">
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="index.html">Home</a>
-			        </li>
 			        <li class="nav-item">
 			          <a class="nav-link decorated-header" href="about.html">About</a>
 			        </li>
 			        <li class="nav-item dropdown">
-			          <a class="nav-link active2 decorated-header" aria-current="page" href="reports.html"><center>Reports on Books</center></a>
+			          <a class="nav-link active2 decorated-header" aria-current="page" href="reports.html"><center>Reports</center></a>
 			        </li>
 			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="textviewer.html"><center>Text Viewer</center></a>
+			          <a class="nav-link decorated-header" href="tools.html"><center>Tools</center></a>
 			        </li>
 			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="vis.html">Visualizations</a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="videos.html">Videos</a>
+			          <a class="nav-link decorated-header" href="methods.html">Methods</a>
 			        </li>
 			        <li class="nav-item">
 			          <a class="nav-link decorated-header" href="manuscripts.html">Manuscripts</a>
@@ -56,11 +55,12 @@
 		  </div>
 		</nav>
 
-		<div>
-				&nbsp;
-		</div>
+		<div>&nbsp;</div>
 
-		<div style="display: flex;">
+		<!-- END HEADER -->
+
+
+		<div class="secondary-page-body">
 
 			<div style="width: 25%">
 				<div style="margin-right:20px; padding:20px; border-radius: 25px;">
@@ -73,7 +73,7 @@
 
 			</div>
 
- 
+
 
 			<div class="theot-body">
 				<!-- Code from Google Sheets inserted here -->
@@ -139,9 +139,23 @@
 				
 				<!-- End code from Google Sheets -->
 			</div>
+
 		</div>
 		
+		<!-- BEGIN FOOTER -->
+
+		<div style="position:relative; top: 400px; width:105%; height: auto; margin:-35px; padding:0;">
+			<img src="img/footer-we.png" width=100%>
+		</div>
 		
+		<br/>
+		
+		<div style="width:450px; height:140px; margin:auto; position:relative; top:450px;">
+			<img src="img/logo-EMIP.png" style="float:left; min-width:unset; margin-left:10px;" />
+			<img src="img/logo-NEH.png"  style="float:left; min-width:unset; margin-left:10px;" />
+		</div>
+
+		<!-- END FOOTER -->
 
 	</body>
 </html>

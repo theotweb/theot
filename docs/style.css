@@ -1,9 +1,58 @@
-body {background-color: #E8E4DD}
+body {
+  background-image: url("img/theot_background.png");
+  font-family: "Times New Roman", Times, serif;
+}
 
 .navbar-nav .nav-link {
 	margin-right: 25px;
 	margin-left: 25px;
+  font-size:150%;
 }
+
+nav.masthead {
+  position: absolute;
+  top: 0; right: 0; left: 0;
+
+  background-image: url('img/theot_masthead.png'); 
+  background-repeat: repeat-x;
+  max-width: 100%; 
+  margin: auto; 
+  height:200px;
+}
+div.theot-header {
+  position:absolute; 
+  left:10px; 
+  top: 10px;
+}
+
+div.front-welcome-text {
+  width:75%; 
+  margin:auto; 
+  position:relative; 
+  top:250px;
+}
+
+div.front-bands {
+  width:75%; 
+  margin:auto; 
+  position:relative; 
+  top:300px;
+}
+
+div.front-manuscript-examples {
+  margin:auto; 
+  width:75%; 
+  position:relative; 
+  top: 325px;
+}
+
+div.secondary-page-body {
+  display: flex; 
+  position:relative; 
+  top: 200px;
+
+}
+
 
 
 ul.header-images {
@@ -85,26 +134,12 @@ a.active2 {
   background-color: #ADA384;
 }
 
-nav.masthead {
-  background-image: url('img/theot-masthead2.png'); 
-  background-repeat: repeat-x;
-   max-width: 100%; 
-   margin: auto; 
-   height:200px;
-}
+
 
 p.juicy-quote { 
   font-family: "Apple Chancery", "American Typewriter", "Georgia", serif;
   font-size:150%;
  }
-
-
-.logos {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: right;
-}
 
 .reports-type1-charts-container {
   display: flex;

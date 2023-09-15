@@ -13,10 +13,10 @@
 	  </head>
 	  <body class="p-3 m-0 border-0 bd-example">
 
+		<!-- BEGIN HEADER -->
+
 		<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark masthead">
 		  <div class="container-fluid">
-			
-			<!-- <span style="font-size: 400%;">THEOT</span><br/> -->
 
 				<!-- It has to have something here for the nav to float right -->
 				<span style="width:600px; height:100px;">&nbsp;</span>
@@ -27,25 +27,24 @@
 			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			      <span class="navbar-toggler-icon"></span>
 			    </button>
-			    <div class="collapse navbar-collapse gx-3" id="navbarNavDropdown">
+
+			    <div class="theot-header">
+			    	<a href="index.html"><img src="../../../img/theot-logo-white.png"></a>
+			    </div>
+
+			    <div style="position:relative;top:50px;" class="collapse navbar-collapse gx-3" id="navbarNavDropdown">
 			      <ul class="navbar-nav gx-3">
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="../../../index.html">Home</a>
-			        </li>
 			        <li class="nav-item">
 			          <a class="nav-link decorated-header" href="../../../about.html">About</a>
 			        </li>
 			        <li class="nav-item dropdown">
-			          <a class="nav-link active2 decorated-header" aria-current="page" href="../../../reports.html">Reports on Books</a>
+			          <a class="nav-link active2 decorated-header" aria-current="page" href="../../../reports.html"><center>Reports</center></a>
 			        </li>
 			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="../../../textviewer.html">Text Viewer</a>
+			          <a class="nav-link decorated-header" href="../../../tools.html"><center>Tools</center></a>
 			        </li>
 			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="../../../vis.html">Visualizations</a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="../../../videos.html">Videos</a>
+			          <a class="nav-link decorated-header" href="../../../methods.html">Methods</a>
 			        </li>
 			        <li class="nav-item">
 			          <a class="nav-link decorated-header" href="../../../manuscripts.html">Manuscripts</a>
@@ -56,11 +55,12 @@
 		  </div>
 		</nav>
 
-		<div>
-				&nbsp;
-		</div>
+		<div>&nbsp;</div>
 
-		<div style="display: flex;">
+		<!-- END HEADER -->
+
+
+		<div class="secondary-page-body">
 
 			<div style="width: 25%">
 				<div style="margin-right:20px; padding:20px; border-radius: 25px;">
@@ -154,103 +154,111 @@
 					    <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="29" aria-label="Slide 30"></button>
 					    <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="30" aria-label="Slide 31"></button>
 					    <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="31" aria-label="Slide 32"></button>
+					    <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="32" aria-label="Slide 33"></button>
+					    <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="33" aria-label="Slide 34"></button>
 					  </div>
 					  <div class="carousel-inner">
 					    <div class="carousel-item active">
-					      <img src="../../../img/Deuteronomy/Deu_BL480.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_BN Abb 35 (17th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_BL481.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_BN Abb 55 (15-16th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_CamAdd1570.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_BodHunt625 (14th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_DavDabBiz.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_Cam1570 (1588-9).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_DavKeb.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMIP654 (l15-e16th)).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_DavMaq1.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMIP746 (1719).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMIP0683.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMIP881 (17th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMIP0743.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMIP949 (e20th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMIP0754.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMIP1029 (15-16th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMIP1037+38.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMIP1063 = EMML6274 (19-20th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMIP1115.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMIP1070 = EMML5595 (1914).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMIP2111.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMIP1095 = EMML5597 (19th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMML0039.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMIP2007  (18th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMML0510.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMML36 (18-19th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMML1842.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMML349 (1923-4).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMML1929a.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMML1481 (e17th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMML2098.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMML1768 (l15th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMML2388.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMML1842 (1662-3).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMML2436.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMML2080 (16th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMML6359.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMML2440 (1663).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMML6557.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMML6686 (17th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMML7637.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMML6930 (18th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EMML9001.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_EMML7584 (16th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EthioSPaRe_AQG-008.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_GG106 (1682-1706).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EthioSPaRe_QQM-003.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_GG152  (16th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_EthioSPaRe_UM-040.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_GG181  (16th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_GG60.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_GG203  (15th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_GG101.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_IES77 (1934).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_IES77.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_IES436 (15-16th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_IES294.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_PrinceGarEth7 (17th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Deu_VatCer75.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_UNESCO10_4 (l17-e18th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					    <div class="carousel-item">
-					      <img src="../../../img/Deuteronomy/Pistoia_Martini2.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					      <img src="manuscripts/Amo_UNESCO10_34 (1931).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="manuscripts/Amo_UNESCO10_65 (18-19th).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="manuscripts/Amo_VatCer75 (1930-1).jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
 					    </div>
 					  </div>
 					  <button class="carousel-control-prev" type="button" data-bs-target="#manuscriptCarousel" data-bs-slide="prev">
@@ -634,7 +642,20 @@
 			</div>
 		</div>
 		
+		<!-- BEGIN FOOTER -->
+
+		<div style="position:relative; top: 400px; width:105%; height: auto; margin:-35px; padding:0;">
+			<img src="../../../img/footer-we.png" width=100%>
+		</div>
 		
+		<br/>
+		
+		<div style="width:450px; height:140px; margin:auto; position:relative; top:450px;">
+			<img src="../../../img/logo-EMIP.png" style="float:left; min-width:unset; margin-left:10px;" />
+			<img src="../../../img/logo-NEH.png"  style="float:left; min-width:unset; margin-left:10px;" />
+		</div>
+
+		<!-- END FOOTER -->
 
 	</body>
 </html>
