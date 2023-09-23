@@ -109,7 +109,19 @@
 					// Update image in modal
 					function updateModal(e)
 					{
+						console.log('updateModel ', e.target.src)
 						document.getElementById('manuscript-modal-body').innerHTML = "<img src="+e.target.src+" class='d-block w-100' alt='...'>";
+						//document.getElementById('manuscript-modal-title').innerHTML = "";
+					}
+					function updateModalF(e)
+					{
+						// bel.jpg is thumbnail, fbel.jpg is full size
+						// 
+						afile = e.target.src
+						i = afile.lastIndexOf('/')
+						f2 = afile.slice(0, i+1) + "f" + afile.slice(i+1)
+						// console.log('   newfile: ', f2)
+						document.getElementById('manuscript-modal-body').innerHTML = "<img src="+f2+" class='d-block w-100' alt='...'>";
 						//document.getElementById('manuscript-modal-title').innerHTML = "";
 					}
 				</script>
@@ -127,23 +139,27 @@
 							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
 							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
 						</div>
-						<div class="carousel-inner">
-					
+						<div class="carousel-inner" style="height: 300px">
+					<!-- d-block h-100-->
 							<div class="carousel-item active">
-								<img src="Dan_Dan1_EMIP1029 (15th).jpg" class="d-block w-100" alt="..."
-									onClick="updateModal(event); modal.show();">
+								<img src="dan1.jpg" class="d-inline-block h-50" alt="..."
+									onClick="updateModalF(event); modal.show();">
+								<div class="carousel-caption d-none d-md-block">
+									<h5>EMIP1029 </h5>
+									<p>...</p>
+									</div>
 							</div>
 							<div class="carousel-item">
-								<img src="Dan_Sus_EMIP1029 (15th).jpg" class="d-block w-100" alt="..."
-									onClick="updateModal(event); modal.show();">
+								<img src="sus.jpg" class="d-inline-block h-50" alt="..."
+									onClick="updateModalF(event); modal.show();">
 							</div>
 							<div class="carousel-item">
-								<img src="Dan_Song of 3_EMIP1029 (15th).jpg" class="d-block w-100" alt="..."
-									onClick="updateModal(event); modal.show();">
+								<img src="song.jpg" class="d-inline-block h-50" alt="..."
+									onClick="updateModalF(event); modal.show();">
 							</div>
 							<div class="carousel-item">
-								<img src="Dan_Bel_EMIP1029 (15th).jpg" class="d-block w-100" alt="..."
-									onClick="updateModal(event); modal.show();">
+								<img src="bel.jpg" class="d-inline-block h-50" alt="..."
+									onClick="updateModalF(event); modal.show();">
 							</div>
 						</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#manuscriptCarousel" data-bs-slide="prev">
