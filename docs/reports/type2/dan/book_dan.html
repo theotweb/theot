@@ -1,244 +1,266 @@
 <!doctype html>
 <html lang="en">
-	  <head>
-		<title>THEOT</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-		<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-		<link rel="stylesheet" href="../../../style.css">
+  <head>
+    <title>THEOT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../../style.css">
 
-	  </head>
-	  <body class="p-3 m-0 border-0 bd-example">
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
 
-		<!-- BEGIN HEADER -->
+    <!-- BEGIN HEADER -->
 
-		<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark masthead">
-		  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark masthead">
+      <div class="container-fluid">
 
-				<!-- It has to have something here for the nav to float right -->
-				<span style="width:600px; height:100px;">&nbsp;</span>
+	<!-- It has to have something here for the nav to float right -->
+	<span style="width:600px; height:100px;">&nbsp;</span>
 
-			
-		    <div class="ml-auto">
-				
-			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			      <span class="navbar-toggler-icon"></span>
-			    </button>
+	
+	<div class="ml-auto">
+	  
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
 
-			    <div class="theot-header">
-			    	<a href="../../../index.html"><img src="../../../img/theot-logo-white.png"></a>
-			    </div>
+	  <div class="theot-header">
+	    <a href="../../../index.html"><img src="../../../img/theot-logo-white.png"></a>
+	  </div>
 
-			    <div style="position:relative;top:50px;" class="collapse navbar-collapse gx-3" id="navbarNavDropdown">
-			      <ul class="navbar-nav gx-3">
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="../../../about.html">About</a>
-			        </li>
-			        <li class="nav-item dropdown">
-			          <a class="nav-link active2 decorated-header" aria-current="page" href="../../../reports.html"><center>Reports</center></a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="../../../tools.html"><center>Tools</center></a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="../../../methods.html">Methods</a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="../../../manuscripts.html">Manuscripts</a>
-			        </li>
-			      </ul>
-			    </div>
-			 </div>
-		  </div>
-		</nav>
+	  <div style="position:relative;top:50px;" class="collapse navbar-collapse gx-3" id="navbarNavDropdown">
+	    <ul class="navbar-nav gx-3">
+	      <li class="nav-item">
+		<a class="nav-link decorated-header" href="../../../about.html">About</a>
+	      </li>
+	      <li class="nav-item dropdown">
+		<a class="nav-link active2 decorated-header" aria-current="page" href="../../../reports.html"><center>Reports</center></a>
+	      </li>
+	      <li class="nav-item">
+		<a class="nav-link decorated-header" href="../../../tools.html"><center>Tools</center></a>
+	      </li>
+	      <li class="nav-item">
+		<a class="nav-link decorated-header" href="../../../methods.html">Methods</a>
+	      </li>
+	      <li class="nav-item">
+		<a class="nav-link decorated-header" href="../../../manuscripts.html">Manuscripts</a>
+	      </li>
+	    </ul>
+	  </div>
+	</div>
+      </div>
+    </nav>
 
-		<div>&nbsp;</div>
+    <div>&nbsp;</div>
 
-		<!-- END HEADER -->
-
-
-		<div class="secondary-page-body">
-
-			<div style="width: 25%">
-				<div style="margin-right:20px; padding:20px; border-radius: 25px;">
-					
-					<h1>Materials for the <br/> Study of Ethiopic <br/> Daniel</h1>
-					
-					<br/>
-					
-					<p class="juicy-quote">We...</p>
-					<div style="margin-left: 15px;">
-						<p class="juicy-quote">Turn text into numbers.</p>
-
-						<p class="juicy-quote">Identify patterns in the numbers.</p>
-
-						<p class="juicy-quote">Turn numbers into stories.</p>
-					</div>
-				</div>
-
-				<!-- Manuscript Carousel -->
-
-				<!-- Modal -->
-				<div class="modal modal-xl fade" id="manuscript-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <h1 class="modal-title fs-5" id="manuscript-modal-title">Manuscript</h1>
-				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				      </div>
-				      <div class="modal-body" id="manuscript-modal-body">
-				        ...
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				      </div>
-				    </div>
-				  </div>
-				</div>
-
-				<script>
-					// Returns a Bootstrap modal instance
-					let modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('manuscript-modal')); 
-
-					// Show or hide:
-					//modal.show();
-					//modal.hide();
-
-					// Update image in modal
-					function updateModal(e)
-					{
-						document.getElementById('manuscript-modal-body').innerHTML = "<img src="+e.target.src+" class='d-block w-100' alt='...'>";
-						//document.getElementById('manuscript-modal-title').innerHTML = "";
-					}
-				</script>
+    <!-- END HEADER -->
 
 
-				
-				<div style="margin-right:20px; background-color:rgb(61, 111, 88); padding:20px; border-radius: 25px;">
-					
-					<div id="manuscriptCarousel" class="carousel slide">
-						<div class="carousel-indicators">
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="0" class="active"
-								aria-current="true" aria-label="Slide 1"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-						</div>
-						<div class="carousel-inner">
-					
-							<div class="carousel-item active">
-								<img src="Dan_Dan1_EMIP1029 (15th).jpg" class="d-block w-100" alt="..."
-									onClick="updateModal(event); modal.show();">
-							</div>
-							<div class="carousel-item">
-								<img src="Dan_Sus_EMIP1029 (15th).jpg" class="d-block w-100" alt="..."
-									onClick="updateModal(event); modal.show();">
-							</div>
-							<div class="carousel-item">
-								<img src="Dan_Song of 3_EMIP1029 (15th).jpg" class="d-block w-100" alt="..."
-									onClick="updateModal(event); modal.show();">
-							</div>
-							<div class="carousel-item">
-								<img src="Dan_Bel_EMIP1029 (15th).jpg" class="d-block w-100" alt="..."
-									onClick="updateModal(event); modal.show();">
-							</div>
-						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#manuscriptCarousel" data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#manuscriptCarousel" data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
-					</div>
+    <div class="secondary-page-body">
+
+      <div style="width: 25%">
+	<div style="margin-right:20px; padding:20px; border-radius: 25px;">
+	  
+	  <h1>Materials for the <br/> Study of Ethiopic <br/> Daniel</h1>
+	  
+	  <br/>
+	  
+	  <p class="juicy-quote">We...</p>
+	  <div style="margin-left: 15px;">
+	    <p class="juicy-quote">Turn text into numbers.</p>
+
+	    <p class="juicy-quote">Identify patterns in the numbers.</p>
+
+	    <p class="juicy-quote">Turn numbers into stories.</p>
+	  </div>
+	</div>
+
+	<!-- Manuscript Carousel -->
+
+	<!-- Modal -->
+	<div class="modal modal-xl fade" id="manuscript-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+		<h1 class="modal-title fs-5" id="manuscript-modal-title">Manuscript</h1>
+		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body" id="manuscript-modal-body">
+		...
+	      </div>
+	      <div class="modal-footer">
+		<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script>
+	  // Returns a Bootstrap modal instance
+	  let modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('manuscript-modal')); 
+
+	  // Show or hide:
+	  //modal.show();
+	  //modal.hide();
+
+	  // Update image in modal
+	  function updateModal(e)
+	  {
+	      console.log('updateModel ', e.target.src)
+	      document.getElementById('manuscript-modal-body').innerHTML = "<img src="+e.target.src+" class='d-block w-100' alt='...'>";
+	      //document.getElementById('manuscript-modal-title').innerHTML = "";
+	  }
+	  function updateModalF(e)
+	  {
+	      // bel.jpg is thumbnail, fbel.jpg is full size
+	      // 
+	      afile = e.target.src
+	      i = afile.lastIndexOf('/')
+	      f2 = afile.slice(0, i+1) + "f" + afile.slice(i+1)
+	      // console.log('   newfile: ', f2)
+	      document.getElementById('manuscript-modal-body').innerHTML = "<img src="+f2+" class='d-block w-100' alt='...'>";
+	      //document.getElementById('manuscript-modal-title').innerHTML = "";
+	  }
+	  </script>
+
+
+	
+	<div style="margin-right:20px; background-color:rgb(61, 111, 88); padding:20px; border-radius: 25px;">
+	  
+	  <div id="manuscriptCarousel" class="carousel slide">
+	    <div class="carousel-indicators">
+	      <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="0" aria-label="Slide 1" 
+		      aria-current="true" class="active"></button>
+	      <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	      <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	      <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+	    </div>
+	    <div class="carousel-inner" style="height: 300px">
+	      
+	      <div class="carousel-item active">
+		<img src="Dan_Dan1_EMIP1029_15th.jpg" class="d-inline-block h-50" alt="..."
+		     onClick="updateModalF(event); modal.show();">
+	      </div>
+	      <div class="carousel-item">
+		<img src="Dan_Sus_EMIP1029_15th.jpg" class="d-inline-block h-50" alt="..."
+		     onClick="updateModalF(event); modal.show();">
+	      </div>
+	      <div class="carousel-item">
+		<img src="Dan_Song_of_3_EMIP1029_15th.jpg" class="d-inline-block h-50" alt="..."
+		     onClick="updateModalF(event); modal.show();">
+	      </div>
+	      <div class="carousel-item">
+		<img src="Dan_Bel_EMIP1029_15th.jpg" class="d-inline-block h-50" alt="..."
+		     onClick="updateModalF(event); modal.show();">
+	      </div>
+	    </div>
+	    <button class="carousel-control-prev" type="button" data-bs-target="#manuscriptCarousel" data-bs-slide="prev">
+	      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	      <span class="visually-hidden">Previous</span>
+	    </button>
+	    <button class="carousel-control-next" type="button" data-bs-target="#manuscriptCarousel" data-bs-slide="next">
+	      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	      <span class="visually-hidden">Next</span>
+	    </button>
+	  </div>
 
 
 
-					<h3 class="overlay">Ethiopic Daniel</h3>
-					<p class="overlay">The Ethiopic book of Daniel has many more elements in it than appear in the Hebrew Bible. The first chapter is the story of Susanna.  Chapter two of the Ethiopic book is where the Western book of Daniel begins. In chapter three, there is a large plus that contains the long Song of the Three Hebrew Children. Finally, the last chapter of the Ethiopic book of Daniel is the book of Bel and the Dragon. Further, chapter 11 of the book of Daniel has two very different versions, a long version and a short version.  All manuscripts before the 17th century had the short version. During the 17th century, two slightly different attempts were made to fill in the lacunae of the the older text.</p>
-					
-					
-				</div>
-				
+	  <h3 class="overlay">Ethiopic Daniel</h3>
+	  <p class="overlay">
+		Other findings related to Ethiopic Daniel:
 
-			</div>
+We have evidence of three distinct recensions of Ethiopic Daniel.
 
+The primary recension is carried in virtually all of the extant manuscripts of the Ethiopic tradition. The best representative of the earliest attested text can be found in BN Eth 7 (14th century).
 
+Vienna Eth 16 (a manuscript with text and commentary (tergwame) contains a second recension of the book of Daniel. See Löfgren, O. (ed.), Die äthiopische Übersetzung des Propheten Daniel (Paris: Paul Geuthner, 1927); and Sima, A., “kona yeqattel in einer Wiener Handschrift des äthiopisches Danielbuches,” Oriens Christianus 87(2003):123–29. who studied it and concluded that it was a new translation from Arabic. We discovered that EMIP 1074 contains a matching text to the one in Vienna Eth 16, giving us now two witnesses to this early recension (in terms of the extant manuscript tradition). Unfortunately, neither Vienna Eth 16 nor EMIP 1074 were included in our study of Ethiopic Daniel. However, Niccum wrote about it in “3.5 Daniel, Additions to, Ethiopic,” pages 158–160 in The Textual History of the Bible, vol. 2B, A. Lange and E. Tov, eds. (Leiden: Brill, 2018).
 
-			<div class="theot-body">
+We have identified in UNESCO 10.34 a third recension of Ethiopic Daniel. It appears to be another example of the translation of the Latin Vulgate into Ethiopic, as it clearly is in the minor prophets. 
+</p>
+	  
+	  
+	</div>
+	
 
-				<div style="position:relative; float:left; margin-right:30px; height:600px;">
-					<a href="#" target="_new" class="decorated">Video Intro<br/>to this Page</a>
-				</div>
-
-				<div id="top-dot" class="reports-type2-charts-container" style="margin-top:70px;">
-					<div style="width: 100px;">
-						Aligned<br/>Texts<br/>
-						<a href="#" target="_new" class="decorated">Video</a>
-					</div>
-					<div>
-						<a href="#" target="_new"><img src="../../CS-dot.png" height="175"/></a>
-						<center><i>Click to Enlarge</i></center>
-					</div>
-					<div style="width:100px;">
-						<center><i>Be sure to explore the textual data in the THEOT Text Viewer</i></center>
-					</div>
-				</div>
-
-				<br/>
-
-				<div id="top-den" class="reports-type2-charts-container">
-					<div style="width: 100px;">
-						Dendrogram<br/>
-						<a href="#" target="_new" class="decorated">Video</a>
-					</div>
-					<div>
-						<img src="../../CS-den.png" height="175" style="cursor: pointer;" onClick="updateModal(event); modal.show();"/>
-						<center><i>Click to Enlarge</i></center>
-					</div>
-				</div>
-
-				<br/>
-
-				<div id="top-chart" class="reports-type2-charts-container">
-					<div style="width: 100px;">
-						Chart<br/>
-						<a href="#" target="_new" class="decorated">Video</a>
-					</div>
-					<div>
-						<img src="../../CS-chart.png" height="175" style="cursor: pointer;" onClick="updateModal(event); modal.show();"/>
-						<center><i>Click to Enlarge</i></center>
-					</div>
-				</div>
-
-				<br/><br/>
+      </div>
 
 
-				<!-- Code from Google Sheets inserted here -->
-				
-				
-				<!-- End code from Google Sheets -->
-			</div>
-		</div>
-		
-		<!-- BEGIN FOOTER -->
 
-		<div style="position:relative; top: 400px; width:105%; height: auto; margin:-35px; padding:0;">
-			<img src="../../../img/footer-we.png" width=100%>
-		</div>
-		
-		<br/>
-		
-		<div style="width:450px; height:140px; margin:auto; position:relative; top:450px;">
-			<img src="../../../img/logo-EMIP.png" style="float:left; min-width:unset; margin-left:10px;" />
-			<img src="../../../img/logo-NEH.png"  style="float:left; min-width:unset; margin-left:10px;" />
-		</div>
+      <div class="theot-body">
 
-		<!-- END FOOTER -->
-		
+	<div style="position:relative; float:left; margin-right:30px; height:600px;">
+	  <a href="#" target="_new" class="decorated">Video Intro<br/>to this Page</a>
+	</div>
 
-	</body>
+	<div id="top-dot" class="reports-type2-charts-container" style="margin-top:70px;">
+	  <div style="width: 100px;">
+	    Aligned<br/>Texts<br/>
+	    <a href="#" target="_new" class="decorated">Video</a>
+	  </div>
+	  <div>
+	    <a href="#" target="_new"><img src="../../CS-dot.png" height="175"/></a>
+	    <center><i>Click to Enlarge</i></center>
+	  </div>
+	  <div style="width:100px;">
+	    <center><i>Be sure to explore the textual data in the THEOT Text Viewer</i></center>
+	  </div>
+	</div>
+
+	<br/>
+
+	<div id="top-den" class="reports-type2-charts-container">
+	  <div style="width: 100px;">
+	    Dendrogram<br/>
+	    <a href="#" target="_new" class="decorated">Video</a>
+	  </div>
+	  <div>
+	    <img src="../../CS-den.png" height="175" style="cursor: pointer;" onClick="updateModal(event); modal.show();"/>
+	    <center><i>Click to Enlarge</i></center>
+	  </div>
+	</div>
+
+	<br/>
+
+	<div id="top-chart" class="reports-type2-charts-container">
+	  <div style="width: 100px;">
+	    Chart<br/>
+	    <a href="#" target="_new" class="decorated">Video</a>
+	  </div>
+	  <div>
+	    <img src="../../CS-chart.png" height="175" style="cursor: pointer;" onClick="updateModal(event); modal.show();"/>
+	    <center><i>Click to Enlarge</i></center>
+	  </div>
+	</div>
+
+	<br/><br/>
+
+
+	<!-- Code from Google Sheets inserted here -->
+	
+	
+	<!-- End code from Google Sheets -->
+      </div>
+    </div>
+    
+    <!-- BEGIN FOOTER -->
+
+    <div style="position:relative; top: 400px; width:105%; height: auto; margin:-35px; padding:0;">
+      <img src="../../../img/footer-we.png" width=100%>
+    </div>
+    
+    <br/>
+    
+    <div style="width:450px; height:140px; margin:auto; position:relative; top:450px;">
+      <img src="../../../img/logo-EMIP.png" style="float:left; min-width:unset; margin-left:10px;" />
+      <img src="../../../img/logo-NEH.png"  style="float:left; min-width:unset; margin-left:10px;" />
+    </div>
+
+    <!-- END FOOTER -->
+    
+
+  </body>
 </html>
