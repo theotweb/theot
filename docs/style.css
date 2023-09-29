@@ -168,3 +168,27 @@ p.juicy-quote {
   margin-bottom: auto;
 }
 
+.float-container {
+  border: 6px solid #fff;
+  padding: 20px;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 10px;
+  border: 2px solid rgb(45, 39, 39);
+} 
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+  border: none;
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+}  
