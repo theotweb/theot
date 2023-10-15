@@ -278,7 +278,7 @@
             </button>
           </div>
 
-          <h3 class="overlay">Ethiopic Susanna</h3>
+          <h3 class="overlay">Carousel One</h3>
 
           <p class="overlay">
             Other findings related to Ethiopic Daniel: We have evidence of three
@@ -289,10 +289,10 @@
           </p>
         </div>
         <!-- carousel 2 -->
-
+        <br />
         <div
           class="modal modal-xl fade"
-          id="manuscript-modal"
+          id="manuscript-modal2"
           tabindex="-1"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
@@ -300,7 +300,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="manuscript-modal-title">
+                <h1 class="modal-title fs-5" id="manuscript-modal-title2">
                   Manuscript
                 </h1>
                 <button
@@ -310,7 +310,7 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="modal-body" id="manuscript-modal-body">...</div>
+              <div class="modal-body" id="manuscript-modal-body2">...</div>
               <div class="modal-footer">
                 <button
                   type="button"
@@ -326,8 +326,8 @@
 
         <script>
           // Returns a Bootstrap modal instance
-          let modal = bootstrap.Modal.getOrCreateInstance(
-            document.getElementById("manuscript-modal")
+          let modal2 = bootstrap.Modal.getOrCreateInstance(
+            document.getElementById("manuscript-modal2")
           );
 
           // Show or hide:
@@ -335,19 +335,19 @@
           //modal.hide();
 
           // Update image in modal
-          function updateModal(e) {
-            document.getElementById("manuscript-modal-body").innerHTML =
+          function updateModal2(e) {
+            document.getElementById("manuscript-modal-body2").innerHTML =
               "<img src=" + e.target.src + " class='d-block w-100' alt='...'>";
             //document.getElementById('manuscript-modal-title').innerHTML = "";
           }
-          function updateModalF(e) {
+          function updateModalF2(e) {
             // bel.jpg is thumbnail, fbel.jpg is full size
             //
             afile = e.target.src;
             i = afile.lastIndexOf("/");
             f2 = afile.slice(0, i + 1) + "f" + afile.slice(i + 1);
             // console.log('   newfile: ', f2)
-            document.getElementById("manuscript-modal-body").innerHTML =
+            document.getElementById("manuscript-modal-body2").innerHTML =
               "<img src=" + f2 + " class='d-block w-100' alt='...'>";
             //document.getElementById('manuscript-modal-title').innerHTML = "";
           }
@@ -361,11 +361,11 @@
             border-radius: 25px;
           "
         >
-          <div id="manuscriptCarousel" class="carousel slide">
+          <div id="manuscriptCarousel2" class="carousel slide">
             <div class="carousel-indicators">
               <button
                 type="button"
-                data-bs-target="#manuscriptCarousel"
+                data-bs-target="#manuscriptCarousel2"
                 data-bs-slide-to="0"
                 class="active"
                 aria-current="true"
@@ -373,30 +373,30 @@
               ></button>
               <button
                 type="button"
-                data-bs-target="#manuscriptCarousel"
+                data-bs-target="#manuscriptCarousel2"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
               ></button>
               <button
                 type="button"
-                data-bs-target="#manuscriptCarousel"
+                data-bs-target="#manuscriptCarousel2"
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
               ></button>
               <button
                 type="button"
-                data-bs-target="#manuscriptCarousel"
+                data-bs-target="#manuscriptCarousel2"
                 data-bs-slide-to="3"
                 aria-label="Slide 4"
               ></button>
             </div>
-            <div class="carousel-inner" style="height: 250px">
+            <div class="carousel-inner" style="height: 200px">
               <div class="carousel-item active">
                 <img
                   src="Dan_01.jpg"
                   class="d-inline-block h-50"
                   alt="..."
-                  onClick="updateModalF(event); modal.show();"
+                  onClick="updateModalF2(event); modal2.show();"
                 />
               </div>
               <div class="carousel-item">
@@ -404,7 +404,7 @@
                   src="Dan_02.jpg"
                   class="d-inline-block h-50"
                   alt="..."
-                  onClick="updateModalF(event); modal.show();"
+                  onClick="updateModalF2(event); modal2.show();"
                 />
               </div>
               <div class="carousel-item">
@@ -412,7 +412,7 @@
                   src="Dan_03.jpg"
                   class="d-inline-block h-50"
                   alt="..."
-                  onClick="updateModalF(event); modal.show();"
+                  onClick="updateModalF2(event); modal2.show();"
                 />
               </div>
               <div class="carousel-item">
@@ -420,7 +420,7 @@
                   src="Dan_04.jpg"
                   class="d-inline-block h-50"
                   alt="..."
-                  onClick="updateModalF(event); modal.show();"
+                  onClick="updateModalF2(event); modal2.show();"
                 />
               </div>
             </div>
@@ -428,7 +428,7 @@
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#manuscriptCarousel"
+              data-bs-target="#manuscriptCarousel2"
               data-bs-slide="prev"
             >
               <span
@@ -440,7 +440,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#manuscriptCarousel"
+              data-bs-target="#manuscriptCarousel2"
               data-bs-slide="next"
             >
               <span
@@ -451,15 +451,9 @@
             </button>
           </div>
 
-          <h3 class="overlay">Ethiopic Susanna</h3>
+          <h3 class="overlay">Carousel Two</h3>
 
-          <p class="overlay">
-            Other findings related to Ethiopic Daniel: We have evidence of three
-            distinct recensions of Ethiopic Daniel. The primary recension is
-            carried in virtually all of the extant manuscripts of the Ethiopic
-            tradition. The best representative of the earliest attested text can
-            be found in BN Eth 7 (14th century).
-          </p>
+          <p class="overlay">Carousel Two words</p>
         </div>
       </div>
 
