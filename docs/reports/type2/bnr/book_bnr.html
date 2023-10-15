@@ -285,23 +285,180 @@
             distinct recensions of Ethiopic Daniel. The primary recension is
             carried in virtually all of the extant manuscripts of the Ethiopic
             tradition. The best representative of the earliest attested text can
-            be found in BN Eth 7 (14th century). Vienna Eth 16 (a manuscript
-            with text and commentary (tergwame) contains a second recension of
-            the book of Daniel. See Löfgren, O. (ed.), Die äthiopische
-            Übersetzung des Propheten Daniel (Paris: Paul Geuthner, 1927); and
-            Sima, A., “kona yeqattel in einer Wiener Handschrift des
-            äthiopisches Danielbuches,” Oriens Christianus 87(2003):123–29. who
-            studied it and concluded that it was a new translation from Arabic.
-            We discovered that EMIP 1074 contains a matching text to the one in
-            Vienna Eth 16, giving us now two witnesses to this early recension
-            (in terms of the extant manuscript tradition). Unfortunately,
-            neither Vienna Eth 16 nor EMIP 1074 were included in our study of
-            Ethiopic Daniel. However, Niccum wrote about it in “3.5 Daniel,
-            Additions to, Ethiopic,” pages 158–160 in The Textual History of the
-            Bible, vol. 2B, A. Lange and E. Tov, eds. (Leiden: Brill, 2018). We
-            have identified in UNESCO 10.34 a third recension of Ethiopic
-            Daniel. It appears to be another example of the translation of the
-            Latin Vulgate into Ethiopic, as it clearly is in the minor prophets.
+            be found in BN Eth 7 (14th century).
+          </p>
+        </div>
+        <!-- carousel 2 -->
+
+        <div
+          class="modal modal-xl fade"
+          id="manuscript-modal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="manuscript-modal-title">
+                  Manuscript
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body" id="manuscript-modal-body">...</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          // Returns a Bootstrap modal instance
+          let modal = bootstrap.Modal.getOrCreateInstance(
+            document.getElementById("manuscript-modal")
+          );
+
+          // Show or hide:
+          //modal.show();
+          //modal.hide();
+
+          // Update image in modal
+          function updateModal(e) {
+            document.getElementById("manuscript-modal-body").innerHTML =
+              "<img src=" + e.target.src + " class='d-block w-100' alt='...'>";
+            //document.getElementById('manuscript-modal-title').innerHTML = "";
+          }
+          function updateModalF(e) {
+            // bel.jpg is thumbnail, fbel.jpg is full size
+            //
+            afile = e.target.src;
+            i = afile.lastIndexOf("/");
+            f2 = afile.slice(0, i + 1) + "f" + afile.slice(i + 1);
+            // console.log('   newfile: ', f2)
+            document.getElementById("manuscript-modal-body").innerHTML =
+              "<img src=" + f2 + " class='d-block w-100' alt='...'>";
+            //document.getElementById('manuscript-modal-title').innerHTML = "";
+          }
+        </script>
+
+        <div
+          style="
+            margin-right: 20px;
+            background-color: rgb(61, 111, 88);
+            padding: 20px;
+            border-radius: 25px;
+          "
+        >
+          <div id="manuscriptCarousel" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#manuscriptCarousel"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#manuscriptCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#manuscriptCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#manuscriptCarousel"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner" style="height: 250px">
+              <div class="carousel-item active">
+                <img
+                  src="Dan_01.jpg"
+                  class="d-inline-block h-50"
+                  alt="..."
+                  onClick="updateModalF(event); modal.show();"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="Dan_02.jpg"
+                  class="d-inline-block h-50"
+                  alt="..."
+                  onClick="updateModalF(event); modal.show();"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="Dan_03.jpg"
+                  class="d-inline-block h-50"
+                  alt="..."
+                  onClick="updateModalF(event); modal.show();"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="Dan_04.jpg"
+                  class="d-inline-block h-50"
+                  alt="..."
+                  onClick="updateModalF(event); modal.show();"
+                />
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#manuscriptCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#manuscriptCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <h3 class="overlay">Ethiopic Susanna</h3>
+
+          <p class="overlay">
+            Other findings related to Ethiopic Daniel: We have evidence of three
+            distinct recensions of Ethiopic Daniel. The primary recension is
+            carried in virtually all of the extant manuscripts of the Ethiopic
+            tradition. The best representative of the earliest attested text can
+            be found in BN Eth 7 (14th century).
           </p>
         </div>
       </div>
