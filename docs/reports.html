@@ -1,161 +1,362 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	  <head>
-		<title>THEOT</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-		<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-		<link rel="stylesheet" href="style.css">
+  <head>
+    <title>THEOT</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-	  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+    <!-- BEGIN HEADER -->
 
-	  <body class="p-3 m-0 border-0 bd-example">
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark masthead"
+    >
+      <div class="container-fluid">
+        <!-- It has to have something here for the nav to float right -->
+        <span style="width: 600px; height: 100px">&nbsp;</span>
 
-		<!-- BEGIN HEADER -->
+        <div class="ml-auto">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-		<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark masthead">
-		  <div class="container-fluid">
+          <div class="theot-header">
+            <a href="index.html"><img src="img/theot-logo-white.png" /></a>
+          </div>
 
-				<!-- It has to have something here for the nav to float right -->
-				<span style="width:600px; height:100px;">&nbsp;</span>
+          <div
+            style="position: relative; top: 50px"
+            class="collapse navbar-collapse gx-3"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav gx-3">
+              <li class="nav-item">
+                <a class="nav-link decorated-header" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active2 decorated-header"
+                  aria-current="page"
+                  href="reports.html"
+                  ><center>Reports</center></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link decorated-header" href="tools.html"
+                  ><center>Tools</center></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link decorated-header" href="methods.html"
+                  >Methods</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link decorated-header" href="manuscripts.html"
+                  >Manuscripts</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-			
-		    <div class="ml-auto">
-				
-			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			      <span class="navbar-toggler-icon"></span>
-			    </button>
+    <div>&nbsp;</div>
 
-			    <div class="theot-header">
-			    	<a href="index.html"><img src="img/theot-logo-white.png"></a>
-			    </div>
+    <!-- END HEADER -->
 
-			    <div style="position:relative;top:50px;" class="collapse navbar-collapse gx-3" id="navbarNavDropdown">
-			      <ul class="navbar-nav gx-3">
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="about.html">About</a>
-			        </li>
-			        <li class="nav-item dropdown">
-			          <a class="nav-link active2 decorated-header" aria-current="page" href="reports.html"><center>Reports</center></a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="tools.html"><center>Tools</center></a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="methods.html">Methods</a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="manuscripts.html">Manuscripts</a>
-			        </li>
-			      </ul>
-			    </div>
-			 </div>
-		  </div>
-		</nav>
+    <div class="secondary-page-body">
+      <div style="width: 25%">
+        <div style="margin-right: 20px; padding: 20px; border-radius: 25px">
+          <h1>
+            Reports on the<br />
+            Books of the Ethiopic <br />Old Testament
+          </h1>
+          <br />
+          <p class="juicy-quote">
+            "Complete data sets are available for each of the books involved in
+            our project."
+          </p>
+          <p class="juicy-quote">
+            "In addition, we’ve provided video tutorials to explain the nature
+            and layout of the data."
+          </p>
+          <p class="juicy-quote">
+            "No one set of conclusions from the data is more important than the
+            data itself."
+          </p>
+        </div>
+      </div>
 
-		<div>&nbsp;</div>
+      <div class="theot-body">
+        <!-- Code from Google Sheets inserted here -->
 
-		<!-- END HEADER -->
+        <div style="margin-left: 50px">
+          <br />
 
+          <div style="float: left">
+            <p style="font-size: 150%">
+              Type I Reports: Books with full explanation of method, full data
+              and full analysis
+            </p>
 
-		<div class="secondary-page-body">
+            <ul>
+              <li>
+                <a href="reports/type1/deu/book_deu.html" class="decorated"
+                  >The Ethiopic Book of Deuteronomy</a
+                >
+              </li>
+              <li>
+                <a href="reports/type1/judg/book_judg.html" class="decorated"
+                  >The Ethiopic Book of Judges</a
+                >
+              </li>
+              <li>
+                <a href="reports/type1/ecc/book_ecc.html" class="decorated"
+                  >The Ethiopic Book of Ecclesiastes</a
+                >
+              </li>
+              <li>
+                <a href="reports/type1/hos/book_hos.html" class="decorated"
+                  >The Ethiopic Book of Hosea</a
+                >
+              </li>
+              <li>
+                <a href="reports/type1/amos/book_amos.html" class="decorated"
+                  >The Ethiopic Book of Amos</a
+                >
+              </li>
+              <li>
+                <a href="reports/type1/oba/book_oba.html" class="decorated"
+                  >The Ethiopic Book of Obadiah</a
+                >
+              </li>
+              <li>
+                <a href="reports/type1/nah/book_nah.html" class="decorated"
+                  >The Ethiopic Book of Nahum</a
+                >
+              </li>
+            </ul>
 
-			<div style="width: 25%">
-				<div style="margin-right:20px; padding:20px; border-radius: 25px;">
-					<h1>Reports on the<br/> Books of the Ethiopic <br/>Old Testament</h1>
-					<br/>
-					<p class="juicy-quote">"Complete data sets are available for each of the books involved in our project."</p>
-					<p class="juicy-quote">"In addition, we’ve provided video tutorials to explain the nature and layout of the data."</p>
-					<p class="juicy-quote">"No one set of conclusions from the data is more important than the data itself."</p>
-				</div>
+            <p style="font-size: 150%">
+              Type II Reports: Books with text samples, data, dendrograms, and
+              best representatives
+            </p>
 
-			</div>
+            <ul>
+              <li>
+                <a href="reports/type2/ruth/book_ruth.html" class="decorated"
+                  >The Ethiopic Book of Ruth</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/est/book_est.html" class="decorated"
+                  >The Ethiopic Book of Esther</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/job/book_job.html" class="decorated"
+                  >The Ethiopic Book of Job</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/psa/book_psa.html" class="decorated"
+                  >The Ethiopic Book of Psalms</a
+                >
+              </li>
+              <li>
+                <a
+                  href="reports/type2/psa151/book_psa151.html"
+                  class="decorated"
+                  >The Ethiopic Book of Psalm 151</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/song/book_song.html" class="decorated"
+                  >The Ethiopic Book of Song of Songs</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/jer/book_jer.html" class="decorated"
+                  >The Ethiopic Book of Jeremiah</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/epjer/book_epjer.html" class="decorated"
+                  >The Ethiopic Book of Epistle of Jeremiah</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/ezek/book_ezek.html" class="decorated"
+                  >The Ethiopic Book of Ezekiel</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/sus/book_sus.html" class="decorated"
+                  >The Ethiopic Book of Susanna</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/three/book_three.html" class="decorated"
+                  >The Ethiopic Book of Song of the Three Children</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/dan/book_dan.html" class="decorated"
+                  >The Ethiopic Book of Daniel</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/bel/book_bel.html" class="decorated"
+                  >The Ethiopic Book of Bel and the Dragon</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/joel/book_joel.html" class="decorated"
+                  >The Ethiopic Book of Joel</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/jon/book_jon.html" class="decorated"
+                  >The Ethiopic Book of Jonah</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/mic/book_mic.html" class="decorated"
+                  >The Ethiopic Book of Micah</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/hab/book_hab.html" class="decorated"
+                  >The Ethiopic Book of Habakkuk</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/hag/book_hag.html" class="decorated"
+                  >The Ethiopic Book of Haggai</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/zec/book_zec.html" class="decorated"
+                  >The Ethiopic Book of Zechariah</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/mal/book_mal.html" class="decorated"
+                  >The Ethiopic Book of Malachi</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/tob/book_tob.html" class="decorated"
+                  >The Ethiopic Book of Tobit</a
+                >
+              </li>
+              <li>
+                <a
+                  href="reports/type2/canticles/book_canticles.html"
+                  class="decorated"
+                  >The Ethiopic Book of The Canticles in the Psalter of the
+                  Virgin</a
+                >
+              </li>
+              <li>
+                <a href="reports/type2/qem/book_qem.html" class="decorated"
+                  >The Ethiopic Book of The Cannibal of Qemer</a
+                >
+              </li>
+            </ul>
 
+            <p style="font-size: 150%">
+              Special Studies Extending the Work of THEOT
+            </p>
 
+            <ul>
+              <li>
+                <a
+                  href="reports/special/scribal_idiosyncrasy.html"
+                  class="decorated"
+                  >The Phenomena of Scribal Idiosyncrasy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="reports/special/cluster_affiliation.html"
+                  class="decorated"
+                  >Models for Identifying Cluster Affiliation among Previously
+                  Unstudied Manuscripts</a
+                >
+              </li>
+              <li>
+                <a
+                  href="reports/special/intervention_jud.html"
+                  class="decorated"
+                  >Scribal Intervention in the book of Judges</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
 
-			<div class="theot-body">
-				<!-- Code from Google Sheets inserted here -->
-			
-				<div style="margin-left:50px;">
+        <!-- End code from Google Sheets -->
+      </div>
+    </div>
 
-					<br/>
-					
-					<div style="float:left;">
-						<p style="font-size: 150%;">Type I Reports: Books with full explanation of method, full data and full analysis</p>
+    <!-- BEGIN FOOTER -->
 
+    <div
+      style="
+        position: relative;
+        top: 400px;
+        width: 105%;
+        height: auto;
+        margin: -35px;
+        padding: 0;
+      "
+    >
+      <img src="img/footer-we.png" width="100%" />
+    </div>
 
-						<ul>
-							<li><a href="reports/type1/deu/book_deu.html" class="decorated">The Ethiopic Book of Deuteronomy</a></li>
-							<li><a href="reports/type1/judg/book_judg.html" class="decorated">The Ethiopic Book of Judges</a></li>
-							<li><a href="reports/type1/ecc/book_ecc.html" class="decorated">The Ethiopic Book of Ecclesiastes</a></li>
-							<li><a href="reports/type1/hos/book_hos.html" class="decorated">The Ethiopic Book of Hosea</a></li>
-							<li><a href="reports/type1/amos/book_amos.html" class="decorated">The Ethiopic Book of Amos</a></li>
-							<li><a href="reports/type1/oba/book_oba.html" class="decorated">The Ethiopic Book of Obadiah</a></li>
-							<li><a href="reports/type1/nah/book_nah.html" class="decorated">The Ethiopic Book of Nahum</a></li>
-						</ul>
+    <br />
 
+    <div
+      style="
+        width: 450px;
+        height: 140px;
+        margin: auto;
+        position: relative;
+        top: 450px;
+      "
+    >
+      <img
+        src="img/logo-EMIP.png"
+        style="float: left; min-width: unset; margin-left: 10px"
+      />
+      <img
+        src="img/logo-NEH.png"
+        style="float: left; min-width: unset; margin-left: 10px"
+      />
+    </div>
 
-						<p style="font-size: 150%;">Type II Reports: Books with text samples, data, dendrograms, and best representatives</p>
-
-						<ul>
-							<li><a href="reports/type2/ruth/book_ruth.html" class="decorated">The Ethiopic Book of Ruth</a></li>
-							<li><a href="reports/type2/est/book_est.html" class="decorated">The Ethiopic Book of Esther</a></li>
-							<li><a href="reports/type2/job/book_job.html" class="decorated">The Ethiopic Book of Job</a></li>
-							<li><a href="reports/type2/psa/book_psa.html" class="decorated">The Ethiopic Book of Psalms</a></li>
-							<li><a href="reports/type2/psa151/book_psa151.html" class="decorated">The Ethiopic Book of Psalm 151</a></li>
-							<li><a href="reports/type2/song/book_song.html" class="decorated">The Ethiopic Book of Song of Songs</a></li>
-							<li><a href="reports/type2/jer/book_jer.html" class="decorated">The Ethiopic Book of Jeremiah</a></li>
-							<li><a href="reports/type2/ezek/book_ezek.html" class="decorated">The Ethiopic Book of Ezekiel</a></li>
-							<li><a href="reports/type2/sus/book_sus.html" class="decorated">The Ethiopic Book of Susanna</a></li>
-							<li><a href="reports/type2/three/book_three.html" class="decorated">The Ethiopic Book of Song of the Three Children</a></li>
-							<li><a href="reports/type2/dan/book_dan.html" class="decorated">The Ethiopic Book of Daniel</a></li>
-							<li><a href="reports/type2/bel/book_bel.html" class="decorated">The Ethiopic Book of Bel and the Dragon</a></li>
-							<li><a href="reports/type2/joel/book_joel.html" class="decorated">The Ethiopic Book of Joel</a></li>
-							<li><a href="reports/type2/jon/book_jon.html" class="decorated">The Ethiopic Book of Jonah</a></li>
-							<li><a href="reports/type2/mic/book_mic.html" class="decorated">The Ethiopic Book of Micah</a></li>
-							<li><a href="reports/type2/hab/book_hab.html" class="decorated">The Ethiopic Book of Habakkuk</a></li>
-							<li><a href="reports/type2/hag/book_hag.html" class="decorated">The Ethiopic Book of Haggai</a></li>
-							<li><a href="reports/type2/zec/book_zec.html" class="decorated">The Ethiopic Book of Zechariah</a></li>
-							<li><a href="reports/type2/mal/book_mal.html" class="decorated">The Ethiopic Book of Malachi</a></li>
-							<li><a href="reports/type2/tob/book_tob.html" class="decorated">The Ethiopic Book of Tobit</a></li>
-							<li><a href="reports/type2/canticles/book_canticles.html" class="decorated">The Ethiopic Book of The Canticles in the Psalter of the Virgin</a></li>
-							<li><a href="reports/type2/qem/book_qem.html" class="decorated">The Ethiopic Book of The Cannibal of Qemer</a></li>
-						</ul>
-
-
-
-						<p style="font-size: 150%;">Special Studies Extending the Work of THEOT</p>
-
-						<ul>
-							<li><a href="reports/special/scribal_idiosyncrasy.html" class="decorated">The Phenomena of Scribal Idiosyncrasy</a></li>
-							<li><a href="reports/special/cluster_affiliation.html" class="decorated">Models for Identifying Cluster Affiliation among Previously Unstudied Manuscripts</a></li>
-							<li><a href="reports/special/intervention_jud.html" class="decorated">Scribal Intervention in the book of Judges</a></li>
-						</ul>
-
-					</div>
-				</div>
-				
-				<!-- End code from Google Sheets -->
-			</div>
-
-		</div>
-		
-		<!-- BEGIN FOOTER -->
-
-		<div style="position:relative; top: 400px; width:105%; height: auto; margin:-35px; padding:0;">
-			<img src="img/footer-we.png" width=100%>
-		</div>
-		
-		<br/>
-		
-		<div style="width:450px; height:140px; margin:auto; position:relative; top:450px;">
-			<img src="img/logo-EMIP.png" style="float:left; min-width:unset; margin-left:10px;" />
-			<img src="img/logo-NEH.png"  style="float:left; min-width:unset; margin-left:10px;" />
-		</div>
-
-		<!-- END FOOTER -->
-
-	</body>
+    <!-- END FOOTER -->
+  </body>
 </html>
