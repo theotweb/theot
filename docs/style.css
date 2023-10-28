@@ -98,6 +98,10 @@ h1.overlay { color: white; }
 h3.overlay { color: white; }
 p.overlay { color: white; }
 
+h1.overlayc { color: white; text-align: center }
+h3.overlayc { color: white; text-align: center }
+p.overlayc { color: white; text-align: center}
+
 div.theot-body {
   margin-left:30px;
   width: 75%
