@@ -29,6 +29,7 @@
           if (firstcard) {
             aria_current = "aria-current = \"true\"";
             active = "true"
+            firstcard = false;
           }
           $("#stuffs2").children().append(`<li>${v}</li>`)
 
@@ -43,8 +44,8 @@
           $("#carousel-inner").children().append(inners)
         }
         // psa_EMIP161, Weiner 56, cover, Menelik Psalter, Leather work back cover.jpg
-        firstcard = false;
-        aria_current
+
+        aria_current = "";
         active = "";
       })
     }
