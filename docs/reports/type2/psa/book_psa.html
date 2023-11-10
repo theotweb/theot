@@ -1,317 +1,492 @@
 <!doctype html>
 <html lang="en">
-	  <head>
-		<title>THEOT</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-		<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-		<link rel="stylesheet" href="../../../style.css">
-		<script src="utility.js"></script>
 
-	  </head>
-	  <body class="p-3 m-0 border-0 bd-example">
+<head>
+	<title>THEOT</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="../../../style.css">
+	<script src="utility.js"></script>
 
-		<!-- BEGIN HEADER -->
+</head>
 
-		<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark masthead">
-		  <div class="container-fluid">
+<body class="p-3 m-0 border-0 bd-example">
 
-				<!-- It has to have something here for the nav to float right -->
-				<span style="width:600px; height:100px;">&nbsp;</span>
+	<!-- BEGIN HEADER -->
 
-			
-		    <div class="ml-auto">
-				
-			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			      <span class="navbar-toggler-icon"></span>
-			    </button>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark masthead">
+		<div class="container-fluid">
 
-			    <div class="theot-header">
-			    	<a href="../../../index.html"><img src="../../../img/theot-logo-white.png"></a>
-			    </div>
-
-			    <div style="position:relative;top:50px;" class="collapse navbar-collapse gx-3" id="navbarNavDropdown">
-			      <ul class="navbar-nav gx-3">
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="../../../about.html">About</a>
-			        </li>
-			        <li class="nav-item dropdown">
-			          <a class="nav-link active2 decorated-header" aria-current="page" href="../../../reports.html"><center>Reports</center></a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="../../../tools.html"><center>Tools</center></a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="../../../methods.html">Methods</a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link decorated-header" href="../../../manuscripts.html">Manuscripts</a>
-			        </li>
-			      </ul>
-			    </div>
-			 </div>
-		  </div>
-		</nav>
-
-		<div>&nbsp;</div>
-
-		<!-- END HEADER -->
+			<!-- It has to have something here for the nav to float right -->
+			<span style="width:600px; height:100px;">&nbsp;</span>
 
 
-		<div class="secondary-page-body">
+			<div class="ml-auto">
 
-			<div style="width: 25%">
-				<div style="margin-right:20px; padding:20px; border-radius: 25px;">
-					
-					<h1>Materials for the <br/> Study of Ethiopic <br/> Psalms</h1>
-					
-					<br/>
-					
-					<p class="juicy-quote">We...</p>
-					<div style="margin-left: 15px;">
-						<p class="juicy-quote">Turn text into numbers.</p>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-						<p class="juicy-quote">Identify patterns in the numbers.</p>
-
-						<p class="juicy-quote">Turn numbers into stories.</p>
-					</div>
+				<div class="theot-header">
+					<a href="../../../index.html"><img src="../../../img/theot-logo-white.png"></a>
 				</div>
 
-				<!-- Manuscript Carousel -->
+				<div style="position:relative;top:50px;" class="collapse navbar-collapse gx-3" id="navbarNavDropdown">
+					<ul class="navbar-nav gx-3">
+						<li class="nav-item">
+							<a class="nav-link decorated-header" href="../../../about.html">About</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link active2 decorated-header" aria-current="page"
+								href="../../../reports.html">
+								<center>Reports</center>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link decorated-header" href="../../../tools.html">
+								<center>Tools</center>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link decorated-header" href="../../../methods.html">Methods</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link decorated-header" href="../../../manuscripts.html">Manuscripts</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
 
-				<!-- Modal -->
-				<div class="modal modal-xl fade" id="manuscript-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <h1 class="modal-title fs-5" id="manuscript-modal-title">Manuscript</h1>
-				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				      </div>
-				      <div class="modal-body" id="manuscript-modal-body">
-				        ...
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				      </div>
-				    </div>
-				  </div>
+	<div>&nbsp;</div>
+
+	<!-- END HEADER -->
+
+
+	<div class="secondary-page-body">
+
+		<div style="width: 25%">
+			<div style="margin-right:20px; padding:20px; border-radius: 25px;">
+
+				<h1>Materials for the <br /> Study of Ethiopic <br /> Psalms</h1>
+
+				<br />
+
+				<p class="juicy-quote">We...</p>
+				<div style="margin-left: 15px;">
+					<p class="juicy-quote">Turn text into numbers.</p>
+
+					<p class="juicy-quote">Identify patterns in the numbers.</p>
+
+					<p class="juicy-quote">Turn numbers into stories.</p>
+				</div>
+			</div>
+
+			<!-- Manuscript Carousel -->
+
+			<!-- Modal -->
+			<div class="modal modal-xl fade" id="manuscript-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="manuscript-modal-title">Manuscript</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" id="manuscript-modal-body">
+							...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				// Returns a Bootstrap modal instance
+				let modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('manuscript-modal'));
+
+				// Show or hide:
+				//modal.show();
+				//modal.hide();
+
+				// Update image in modal
+				function updateModal(e) {
+					document.getElementById('manuscript-modal-body').innerHTML = "<img src=" + e.target.src + " class='d-block w-100' alt='...'>";
+					//document.getElementById('manuscript-modal-title').innerHTML = "";
+				}
+			</script>
+
+
+
+			<div style="margin-right:20px; background-color:rgb(61, 111, 88); padding:20px; border-radius: 25px;">
+
+
+				<div id="manuscriptCarousel" class="carousel slide">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="0" class="active"
+							aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="1"
+							aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="2"
+							aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="3"
+							aria-label="Slide 4"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="4"
+							aria-label="Slide 5"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="5"
+							aria-label="Slide 6"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="6"
+							aria-label="Slide 7"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="7"
+							aria-label="Slide 8"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="8"
+							aria-label="Slide 9"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="9"
+							aria-label="Slide 10"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="10"
+							aria-label="Slide 11"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="11"
+							aria-label="Slide 121"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="12"
+							aria-label="Slide 13"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="13"
+							aria-label="Slide 14"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="14"
+							aria-label="Slide 15"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="15"
+							aria-label="Slide 16"></button>
+						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="16"
+							aria-label="Slide 17"></button>
+					</div>
+					<div class="carousel-inner" style="height: 900px">
+
+						<div class="carousel-item active">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f. 40r, Menelik Psalter, Ps 61 Harag and Stroph count.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), f. 40r. This folio, at the beginning of Psalm
+									61, shows a fine example of the harags of Emperor Menilek's government scriptorium.
+									This style of harag continued through the time of the Empress Zewditu and Emperor
+									Haile Selassie scriptoria. Another feature of Psalters is that they are often marked
+									for daily readings. In this folio, we see the indication "for Wednesday" in the
+									lower right margin inside of a red and black box.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f. 138v, Menelik Psalter, Angels Praise Hert.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), f. 138v. One special feature of this copy of
+									the Psalter is that it contains multiple small works after the normal five works in
+									a Psalter. The works shown are the end of "Gate of Light" and the beginning of "The
+									Angels Praise her," the most common work that is added to the normal five (in the
+									relatively small percentage of instances where there is anything beyond the five).
+								</p>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f. 1r, Menelik Psalter, Psalm 1.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), ff. iiiv-1r. These folios show one of the
+									illuminations of the Psalter as well as the beginning of the book of Psalms. If
+									Psalters contain illuminations, the most common would be a portrait of King David
+									playing his harp, and perhaps the Holy Mother with her beloved Son. The harags
+									(ornamental decorations, usually at the beginning of a new work) in the Menilek
+									Psalter are typical of the style employed in the Menilek, Zewditu, and Selassie
+									scriptoria. </p>
+							</div>
+
+						</div>
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f. 81r, Menelik Psalter, Psalm 111 quire no, harag, reading, nav.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), f. 81r. This folio shows the beginning of Psalm
+									111 with the indication "for Thursday" in the lower right margin. Another feature of
+									Psalters is threads or yarn sewn into the fore edge of folios to aid with navigation
+									to specific locations in the book. This yarn marks the location of Psalm 111.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f. 118v, Menelik Psalter, Song 3 Hebraist.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), f. 118v. This folio, showing the beginning to
+									the third of the five traditional divisions of the Song of Songs. It is precisely in
+									this location where one can check to see if the copy contains the simple form of the
+									Song of Songs, a straight-forward translation of the Septuagint, or whether it
+									contains the Hebraist edition with the additional strophes. The final line is one of
+									the added strophes of the Hebraist edition.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f. 105v, Menelik Psalter, Psalm 151 strophe audit.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), f. 105v. This folio shows the summary strophe
+									audit. This secondary text is usual in Psalters before the 16th century. After the
+									16th century they are very rare. This is one of the elements (along with the stamps
+									and land transaction reports) that indicated the rarefied social location of this
+									Psalter. The form of the text is to list the number of strophes in the first,
+									second, and third groups of 50 psalms in the Psalter and also in the Biblical
+									Canticles as well. Most occurrences of this text go on to say "and the midpoint of
+									the psalms is in Psalm 77 where it says "and he led them in a cloud by day". This
+									psalter lacks that final element and says simply "completed in the peace of the
+									Lord, Father, Amen."</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f. iiir, Menelik Psalter, Record Land Transaction.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), ff. iiiv-1r. These folios show one of the
+									illuminations of the Psalter as well as the beginning of the book of Psalms. If
+									Psalters contain illuminations, the most common would be a portrait of King David
+									playing his harp, and perhaps the Holy Mother with her beloved Son. The harags
+									(ornamental decorations, usually at the beginning of a new work) in the Menilek
+									Psalter are typical of the style employed in the Menilek, Zewditu, and Selassie
+									scriptoria.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f. 35r, Menelik Psalter, Stroph counts Ps 50.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), f. 35r. This folio shows several interesting
+									aspects of the book culture. Early psalters often received an audit of the strophes
+									contained in each psalm. The audits involved three elements: a note in the left
+									margin, indicating every ninth or tenth line; a chapter tally in the right margin
+									near the end of the psalm; and a summary of the entire audit of the book, located
+									often after the Psalms, or after the biblical canticles, or after the Song of Songs.
+									This folio shows the chapter summary (38 strophes in chapter 50) as well as a
+									summary of the first 50 chapters (333).</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f. 113r, Menelik Psalter, Cant 10 Colum.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), f. 113r. This folio shows the columetric layout
+									of text in the Tenth Biblical Canticle.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, cover, Menelik Psalter, Leather work back cover.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), back cover. Discovered and acquired in the USA
+									in 2008, the Menilek Psalter was returned to Ankobarr, Ethiopia on June 9, 2010
+									(https://www.youtube.com/watch?v=1YSMxrdiczo) . One fundamental category of
+									Ethiopian book culture has to do with leather binding. Those without binding are
+									generally also made of inferior materials and display low qualities of workmanship.
+									Those with leather bindings further vereigate themselves into tooled and untooled
+									leather. Those that are tooled display several levels of intricacy in the tooling.
+									For a thorough treatment of the tools and practices of leather tooling of Ethiopian
+									books see the work of Sean Winslow (https://kfunigraz.academia.edu/SeanWinslow).</p>
+							</div>
+
+						</div>
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f. 105r, Menelik Psalter, Psalm 150 colum.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), f. 105r. This folio shows the special feature
+									related to Psalm 150 in many Psalters. One characteristic of the psalm is that is
+									that most of its lines begin with the same word, in Hebrew, Hallelujah. The Ge'ez
+									translation is the word "praise him." In such places where successive lines carry
+									the same elements, the practice developed to employ rubrication of every other
+									letter to call attention to the phenomenon. It has the effect of creating colorful
+									columns. There are several places in a Psalter where this might happen. First in
+									terms of the frequency with which scribes employ the device, is the tenth biblical
+									canticle. Next is Psalm 150. Next is Psalm 148. Finally, some will do a similar
+									treatment of Psalm 28, with its abundance of the word for "the Lord" on successive
+									lines. Over time, the practice increases after the seventeenth century until it is
+									the common treatment for the tenth biblical canticle and Psalm 150 for most Psalters
+									in the late nineteenth and twentieth centuries.</p>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f.164r, Menelik Psalter, Asmat Prayert.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), f. 164r. One of the most common type of
+									secondary texts in Ethiopian Psalters is Asmat prayers. They are very frequent and
+									cover a multude of subjects. This one is a prayer for protection against disease and
+									jaundice. </p>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f. 85r, Menelik Psalter, Psalm 118 spir mean, strophe no.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), f. 85r. Psalm 118 (119 in Hebrew) marks the
+									great acrostic psalm. In the Hebrew, each line of the section begin with the letter
+									of the Hebrew Alphabet. In the Ge'ez tradition they mark the entire section with a
+									text with a small exposition of the spiritual meaning of the Hebrew letter
+									dominating the section. There several systems for explicating the spiritual meaning.
+									The system used in this Psalter involves a simple pun for each letter. Here, for
+									instance, we have "Aleph means the father (Ab) created all the world."</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f. 124r, Menelik Psalter, Seal and Inscription.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), f. 124r. This is perhaps the most sensational
+									folio in this psalter. First, is the statement, written in the very rare "negative
+									space" writing technique that says "this book belongs to King of Kings Menilek."
+									Below the statement is a royal seal of Menilek's daughter.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f. 94v, Menelik Psalter, Psalm 131 harag reading.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), f. 94v. This folio, at the beginning of Psalm
+									131 shows another fine harag, as well as the indication "for Saturday," literally
+									"for the former" [Sabbath]</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f. 97r, Menelik Psalter, Psalm 135 abbrev.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), f. 97r. This folio shows the special feature
+									related to Psalm 135, an antiphonal psalm with the snippet "for forever [is] His
+									mercy" at the conclusion of each strophe. Rather than writing out the entire snippet
+									each time, most scribes employs some form of abbreviation. In this case, the scribe
+									uses the letter aleph which is the first letter of the word for the first word of
+									the snippet "for".</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="./manuscripts/psa_EMIP161, Weiner 56, f. 124v, Menelik Psalter, PM Harag and Monday.jpg"
+								class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
+							<div>
+								<p class="overlay">EMIP 161 (Weiner 56), f. 124v. This image shows the first folio of
+									the Praises of Mary, the fourth work in the Ethiopian Psalter. There are at least
+									two things to note. The first is the layout in two columns, whereas the text to this
+									point in Psalters is almost invariably laid out in one column that is unjustified on
+									the right side. The second item of note is the arrangement of the Praises of Mary
+									for the seven days of the week. Before the sixteenth century most Psalters begin the
+									Praises with Sunday. After the sixteenth century virtually all Psalters begin with
+									Monday, especially after the seventeenth century. In this image, the first full word
+									on line four indicates Monday.</p>
+							</div>
+						</div>
+
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#manuscriptCarousel"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#manuscriptCarousel"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
 				</div>
 
-				<script>
-					// Returns a Bootstrap modal instance
-					let modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('manuscript-modal')); 
-
-					// Show or hide:
-					//modal.show();
-					//modal.hide();
-
-					// Update image in modal
-					function updateModal(e)
-					{
-						document.getElementById('manuscript-modal-body').innerHTML = "<img src="+e.target.src+" class='d-block w-100' alt='...'>";
-						//document.getElementById('manuscript-modal-title').innerHTML = "";
-					}
-				</script>
 
 
-				
-				<div style="margin-right:20px; background-color:rgb(61, 111, 88); padding:20px; border-radius: 25px;">
-					
-					
-					<div id="manuscriptCarousel" class="carousel slide">
-						<div class="carousel-indicators">
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="0" class="active"
-								aria-current="true" aria-label="Slide 1"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="11" aria-label="Slide 121"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="13" aria-label="Slide 14"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="14" aria-label="Slide 15"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="15" aria-label="Slide 16"></button>
-							<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="16" aria-label="Slide 17"></button>
-						</div>
-					  <div class="carousel-inner" style="height: 900px">
-
-					    <div class="carousel-item active">
-					      <img src="psa_EMIP161, Weiner 56, f. 40r, Menelik Psalter, Ps 61 Harag and Stroph count.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-						  <div><p class="overlay">EMIP 161 (Weiner 56), f. 40r. This folio, at the beginning of Psalm 61, shows a fine example of the harags of Emperor Menilek's government scriptorium. This style of harag continued through the time of the Empress Zewditu and Emperor Haile Selassie scriptoria. Another feature of Psalters is that they are often marked for daily readings.  In this folio, we see the indication "for Wednesday" in the lower right margin inside of a red and black box.</p></div>
-						</div>
-					    <div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, f. 138v, Menelik Psalter, Angels Praise Hert.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), f. 138v. One special feature of this copy of the Psalter is that it contains multiple small works after the normal five works in a Psalter.  The works shown are the end of "Gate of Light" and the beginning of "The Angels Praise her," the most common work that is added to the normal five (in the relatively small percentage of instances where there is anything beyond the five).</p></div>
-						</div>
-
-						<div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, f. 1r, Menelik Psalter, Psalm 1.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), ff. iiiv-1r. These folios show one of the illuminations of the Psalter as well as the beginning of the book of Psalms. If Psalters contain illuminations, the most common would be a portrait of King David playing his harp, and perhaps the Holy Mother with her beloved Son. The harags (ornamental decorations, usually at the beginning of a new work) in the Menilek Psalter are typical of the style employed in the Menilek, Zewditu, and Selassie scriptoria. </p></div>
-						
-						</div>
-						<div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, f. 81r, Menelik Psalter, Psalm 111 quire no, harag, reading, nav.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), f. 81r. This folio shows the beginning of Psalm 111 with the indication "for Thursday" in the lower right margin.  Another feature of Psalters is threads or yarn sewn into the fore edge of folios to aid with navigation to specific locations in the book. This yarn marks the location of Psalm 111.</p></div>
-						</div>
-						<div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, f. 118v, Menelik Psalter, Song 3 Hebraist.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), f. 118v. This folio, showing the beginning to the third of the five traditional divisions of the Song of Songs. It is precisely in this location where one can check to see if the copy contains the simple form of the Song of Songs, a straight-forward translation of the Septuagint, or whether it contains the Hebraist edition with the additional strophes.  The final line is one of the added strophes of the Hebraist edition.</p></div>
-						</div>
-						<div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, f. 105v, Menelik Psalter, Psalm 151 strophe audit.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), f. 105v. This folio shows the summary strophe audit. This secondary text is usual in Psalters before the 16th century.  After the 16th century they are very rare.  This is one of the elements (along with the stamps and land transaction reports) that indicated the rarefied social location of this Psalter. The form of the text is to list the number of strophes in the first, second, and third groups of 50 psalms in the Psalter and also in the Biblical Canticles as well. Most occurrences of this text go on to say "and the midpoint of the psalms is in Psalm 77 where it says "and he led them in a cloud by day". This psalter lacks that final element and says simply "completed in the peace of the Lord, Father, Amen."</p></div>
-						</div>
-						<div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, f. iiir, Menelik Psalter, Record Land Transaction.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), ff. iiiv-1r. These folios show one of the illuminations of the Psalter as well as the beginning of the book of Psalms. If Psalters contain illuminations, the most common would be a portrait of King David playing his harp, and perhaps the Holy Mother with her beloved Son. The harags (ornamental decorations, usually at the beginning of a new work) in the Menilek Psalter are typical of the style employed in the Menilek, Zewditu, and Selassie scriptoria.</p></div>
-						</div>
-						<div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, f. 35r, Menelik Psalter, Stroph counts Ps 50.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), f. 35r. This folio shows several interesting aspects of the book culture.  Early psalters often received an audit of the strophes contained in each psalm.  The audits involved three elements: a note in the left margin, indicating every ninth or tenth line; a chapter tally in the right margin near the end of the psalm; and a summary of the entire audit of the book, located often after the Psalms, or after the biblical canticles, or after the Song of Songs.  This folio shows the chapter summary (38 strophes in chapter 50) as well as a summary of the first 50 chapters (333).</p></div>
-						</div>
-						<div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, f. 113r, Menelik Psalter, Cant 10 Colum.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), f. 113r. This folio shows the columetric layout of text in the Tenth Biblical Canticle.</p></div>
-						</div>
-						<div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, cover, Menelik Psalter, Leather work back cover.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), back cover.  Discovered and acquired in the USA in 2008, the Menilek Psalter was returned to Ankobarr, Ethiopia on June 9, 2010 (https://www.youtube.com/watch?v=1YSMxrdiczo) . One fundamental category of Ethiopian book culture has to do with leather binding. Those without binding are generally also made of inferior materials and display low qualities of workmanship. Those with leather bindings further vereigate themselves into tooled and untooled leather. Those that are tooled display several levels of intricacy in the tooling. For a thorough treatment of the tools and practices of leather tooling of Ethiopian books see the work of Sean Winslow (https://kfunigraz.academia.edu/SeanWinslow).</p></div>
-						
-						</div>
-						<div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, f. 105r, Menelik Psalter, Psalm 150 colum.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), f. 105r. This folio shows the special feature related to Psalm 150 in many Psalters. One characteristic of the psalm is that is that most of its lines begin with the same word, in Hebrew, Hallelujah.  The Ge'ez translation is the word "praise him." In such places where successive lines carry the same elements, the practice developed to employ rubrication of every other letter to call attention to the phenomenon.  It has the effect of creating colorful columns. There are several places in a Psalter where this might happen.  First in terms of the frequency with which scribes employ the device, is the tenth biblical canticle.  Next is Psalm 150.  Next is Psalm 148. Finally, some will do a similar treatment of Psalm 28, with its abundance of the word for "the Lord" on successive lines. Over time, the practice increases after the seventeenth century until it is the common treatment for the tenth biblical canticle and Psalm 150 for most Psalters in the late nineteenth and twentieth centuries.</p></div>
-						</div>
-
-						<div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, f.164r, Menelik Psalter, Asmat Prayert.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), f. 164r. One of the most common type of secondary texts in Ethiopian Psalters is Asmat prayers. They are very frequent and cover a multude of subjects. This one is a prayer for protection against disease and jaundice. </p></div>
-						</div>
-
-						<div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, f. 85r, Menelik Psalter, Psalm 118 spir mean, strophe no.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), f. 85r. Psalm 118 (119 in Hebrew) marks the great acrostic psalm.  In the Hebrew, each line of the section begin with the letter of the Hebrew Alphabet. In the Ge'ez tradition they mark the entire section with a text with a small exposition of the spiritual meaning of the Hebrew letter dominating the section. There several systems for explicating the spiritual meaning. The system used in this Psalter involves a simple pun for each letter.  Here, for instance, we have "Aleph means the father (Ab) created all the world."</p></div>
-						</div>
-						<div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, f. 124r, Menelik Psalter, Seal and Inscription.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), f. 124r. This is perhaps the most sensational folio in this psalter.  First, is the statement, written in the very rare "negative space" writing technique that says "this book belongs to King of Kings Menilek."  Below the statement is a royal seal of Menilek's daughter.</p></div>
-						</div>
-						<div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, f. 94v, Menelik Psalter, Psalm 131 harag reading.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), f. 94v. This folio, at the beginning of Psalm 131 shows another fine harag, as well as the indication "for Saturday," literally "for the former" [Sabbath]</p></div>
-						</div>
-						<div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, f. 97r, Menelik Psalter, Psalm 135 abbrev.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), f. 97r. This folio shows the special feature related to Psalm 135, an antiphonal psalm with the snippet "for forever [is] His mercy" at the conclusion of each strophe. Rather than writing out the entire snippet each time, most scribes employs some form of abbreviation. In this case, the scribe uses the letter aleph which is the first letter of the word for the first word of the snippet "for".</p></div>
-						</div>
-						<div class="carousel-item">
-							<img src="psa_EMIP161, Weiner 56, f. 124v, Menelik Psalter, PM Harag and Monday.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();">
-							<div><p class="overlay">EMIP 161 (Weiner 56), f. 124v. This image shows the first folio of the Praises of Mary, the fourth work in the Ethiopian Psalter. There are at least two things to note. The first is the layout in two columns, whereas the text to this point in Psalters is almost invariably laid out in one column that is unjustified on the right side. The second item of note is the arrangement of the Praises of Mary for the seven days of the week.  Before the sixteenth century most Psalters begin the Praises with Sunday.  After the sixteenth century virtually all Psalters begin with Monday, especially after the seventeenth century. In this image, the first full word on line four indicates Monday.</p></div>
-						</div>
-
-					  </div>
-					  <button class="carousel-control-prev" type="button" data-bs-target="#manuscriptCarousel" data-bs-slide="prev">
-					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					    <span class="visually-hidden">Previous</span>
-					  </button>
-					  <button class="carousel-control-next" type="button" data-bs-target="#manuscriptCarousel" data-bs-slide="next">
-					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					    <span class="visually-hidden">Next</span>
-					  </button>
-					</div>
-
-
-
-					<!-- <h3 class="overlay">Ethiopic Psalms</h3>
+				<!-- <h3 class="overlay">Ethiopic Psalms</h3>
 					<p class="overlay">The manuscripts of Ethiopic Psalms are characterized by a .....most of the witnesses are from the 18th century....click above to go to the specific manuscript in the database.</p>
 					 -->
-					
-				</div>
-				
 
 			</div>
 
 
-
-			<div class="theot-body">
-
-				<div style="position:relative; float:left; margin-right:30px; height:600px;">
-					<a href="#" target="_new" class="decorated">Video Intro<br/>to this Page</a>
-				</div>
-
-				<div id="top-dot" class="reports-type2-charts-container" style="margin-top:70px;">
-					<div style="width: 100px;">
-						Aligned<br/>Texts<br/>
-						<a href="#" target="_new" class="decorated">Video</a>
-					</div>
-					<div>
-						<a href="#" target="_new"><img src="../../CS-dot.png" height="175"/></a>
-						<center><i>Click to Enlarge</i></center>
-					</div>
-					<div style="width:100px;">
-						<center><i>Be sure to explore the textual data in the THEOT Text Viewer</i></center>
-					</div>
-				</div>
-
-				<br/>
-
-				<div id="top-den" class="reports-type2-charts-container">
-					<div style="width: 100px;">
-						Dendrogram<br/>
-						<a href="#" target="_new" class="decorated">Video</a>
-					</div>
-					<div>
-						<img src="../../CS-den.png" height="175" style="cursor: pointer;" onClick="updateModal(event); modal.show();"/>
-						<center><i>Click to Enlarge</i></center>
-					</div>
-				</div>
-
-				<br/>
-
-				<div id="top-chart" class="reports-type2-charts-container">
-					<div style="width: 100px;">
-						Chart<br/>
-						<a href="#" target="_new" class="decorated">Video</a>
-					</div>
-					<div>
-						<img src="../../CS-chart.png" height="175" style="cursor: pointer;" onClick="updateModal(event); modal.show();"/>
-						<center><i>Click to Enlarge</i></center>
-					</div>
-				</div>
-
-				<br/><br/>
+		</div>
 
 
-				<!-- Code from Google Sheets inserted here -->
-				
-				
-				<!-- End code from Google Sheets -->
+
+		<div class="theot-body">
+
+			<div style="position:relative; float:left; margin-right:30px; height:600px;">
+				<a href="#" target="_new" class="decorated">Video Intro<br />to this Page</a>
 			</div>
-		</div>
-		
-		<!-- BEGIN FOOTER -->
 
-		<div style="position:relative; top: 400px; width:105%; height: auto; margin:-35px; padding:0;">
-			<img src="../../../img/footer-we.png" width=100%>
-		</div>
-		
-		<br/>
-		
-		<div style="width:450px; height:140px; margin:auto; position:relative; top:450px;">
-			<img src="../../../img/logo-EMIP.png" style="float:left; min-width:unset; margin-left:10px;" />
-			<img src="../../../img/logo-NEH.png"  style="float:left; min-width:unset; margin-left:10px;" />
-		</div>
+			<div id="top-dot" class="reports-type2-charts-container" style="margin-top:70px;">
+				<div style="width: 100px;">
+					Aligned<br />Texts<br />
+					<a href="#" target="_new" class="decorated">Video</a>
+				</div>
+				<div>
+					<a href="#" target="_new"><img src="../../CS-dot.png" height="175" /></a>
+					<center><i>Click to Enlarge</i></center>
+				</div>
+				<div style="width:100px;">
+					<center><i>Be sure to explore the textual data in the THEOT Text Viewer</i></center>
+				</div>
+			</div>
 
-		<!-- END FOOTER -->
-		
+			<br />
 
-	</body>
+			<div id="top-den" class="reports-type2-charts-container">
+				<div style="width: 100px;">
+					Dendrogram<br />
+					<a href="#" target="_new" class="decorated">Video</a>
+				</div>
+				<div>
+					<img src="../../CS-den.png" height="175" style="cursor: pointer;"
+						onClick="updateModal(event); modal.show();" />
+					<center><i>Click to Enlarge</i></center>
+				</div>
+			</div>
+
+			<br />
+
+			<div id="top-chart" class="reports-type2-charts-container">
+				<div style="width: 100px;">
+					Chart<br />
+					<a href="#" target="_new" class="decorated">Video</a>
+				</div>
+				<div>
+					<img src="../../CS-chart.png" height="175" style="cursor: pointer;"
+						onClick="updateModal(event); modal.show();" />
+					<center><i>Click to Enlarge</i></center>
+				</div>
+			</div>
+
+			<br /><br />
+
+
+			<!-- Code from Google Sheets inserted here -->
+
+
+			<!-- End code from Google Sheets -->
+		</div>
+	</div>
+
+	<!-- BEGIN FOOTER -->
+
+	<div style="position:relative; top: 400px; width:105%; height: auto; margin:-35px; padding:0;">
+		<img src="../../../img/footer-we.png" width=100%>
+	</div>
+
+	<br />
+
+	<div style="width:450px; height:140px; margin:auto; position:relative; top:450px;">
+		<img src="../../../img/logo-EMIP.png" style="float:left; min-width:unset; margin-left:10px;" />
+		<img src="../../../img/logo-NEH.png" style="float:left; min-width:unset; margin-left:10px;" />
+	</div>
+
+	<!-- END FOOTER -->
+
+
+</body>
+
 </html>
