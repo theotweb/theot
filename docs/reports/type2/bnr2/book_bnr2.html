@@ -14,11 +14,9 @@
     function nerf() {
       console.log('jquery bnr2')
       var daString = $("#stuffs1").html();
-      console.log('daString:')
-      console.log(daString)
+      console.log('daString:', daString);
       var daArray = daString.split("\n");
-      console.log('daArray:')
-      console.log(daArray)
+      console.log('daArray: ', daArray);
       var firstcard = true;
       var indicators = "";
       var inners = "";
@@ -28,16 +26,16 @@
         if (v !== "") {
           if (firstcard) {
             aria_current = "aria-current = \"true\"";
-            active = "true"
+            active = "active"
             firstcard = false;
           }
           $("#stuffs2").children().append(`<li>${v}</li>`)
 
-          indicators = `<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="${i}" class="active" ${aria_current} aria-label="Slide ${i + 1}"></button>`
+          indicators = `<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="${i}" class="${active}" ${aria_current} aria-label="Slide ${i + 1}"></button>`
           console.log(`indicators: ${indicators}`)
           $("#carousel-indicators").children().append(indicators)
 
-          inners = `<div class="carousel-item active">
+          inners = `<div class="carousel-item ${active}">
           <img src="./manuscripts/${v}" class="d-inline-block h-50" alt="..." onClick="updateModal(event); modal.show();" />
         </div>`
           console.log(`inners: ${inners}`)
