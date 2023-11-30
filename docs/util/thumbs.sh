@@ -6,6 +6,9 @@
 # use "convert" to make thumbnails for a set of images
 #   note - expects image names to start with "Eth"
 # make a text file carousel.txt containing the image file-names
+#
+# images and t folder will live in the "manuscripts" folder of a book
+#
 mkdir t
 for f in Eth*; do
     x=$(basename $f)
