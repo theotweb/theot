@@ -139,6 +139,17 @@
             "<img src=" + f2 + " class='d-block w-100' alt='...'>";
           //document.getElementById('manuscript-modal-title').innerHTML = "";
         }
+        function updateModalt_(e) {
+          // bel.jpg is thumbnail, fbel.jpg is full size
+          //
+          afile = e.target.src;
+          i = afile.lastIndexOf("/");
+          f2 = afile.slice(0, i + 1) + "f" + afile.slice(i + 1);
+          // console.log('   newfile: ', f2)
+          document.getElementById("manuscript-modal-body").innerHTML =
+            "<img src=" + f2 + " class='d-block w-100' alt='...'>";
+          //document.getElementById('manuscript-modal-title').innerHTML = "";
+        }
       </script>
 
       <div style="

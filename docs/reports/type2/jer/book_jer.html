@@ -9,7 +9,8 @@
 	<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 	<link rel="stylesheet" href="../../../style.css">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="../../mycarousel.js"></script>
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
@@ -108,40 +109,20 @@
 				</div>
 			</div>
 
-			<script>
-				// Returns a Bootstrap modal instance
-				let modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('manuscript-modal'));
-
-				// Show or hide:
-				//modal.show();
-				//modal.hide();
-
-				// Update image in modal
-				function updateModal(e) {
-					document.getElementById('manuscript-modal-body').innerHTML = "<img src=" + e.target.src + " class='d-block w-100' alt='...'>";
-					//document.getElementById('manuscript-modal-title').innerHTML = "";
-				}
-			</script>
-
-
+			<script src="../../modals.js"></script>
 
 			<div style="margin-right:20px; background-color:rgb(61, 111, 88); padding:20px; border-radius: 25px;">
 
-
 				<div id="manuscriptCarousel" class="carousel slide">
-					<div class="carousel-indicators">
-						<button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="0" class="active"
-							aria-current="true" aria-label="Slide 1"></button>
-
+					<div id="carousel-indicators" class="carousel-indicators">
+						<!-- insert of happiness -->
+						<div></div>
 					</div>
-					<div class="carousel-inner">
-
-						<div class="carousel-item active">
-							<img src="manuscripts/jer_EMIP682 (20th).jpg" class="d-block w-100" alt="..."
-								onClick="updateModal(event); modal.show();">
-						</div>
-
+					<div id="carousel-inner" class="carousel-inner" style="height: 250px">
+						<!-- insert of happiness 2 -->
+						<div></div>
 					</div>
+
 					<button class="carousel-control-prev" type="button" data-bs-target="#manuscriptCarousel"
 						data-bs-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -153,8 +134,6 @@
 						<span class="visually-hidden">Next</span>
 					</button>
 				</div>
-
-
 
 				<h3 class="overlayc">Ethiopic Jeremiah</h3>
 				<p class="overlayc">The manuscripts of Ethiopic Jeremiah are characterized by a .....most of the
@@ -175,6 +154,11 @@
 			<div style="position:relative; float:left; margin-right:30px; height:600px;">
 				<a href="#" target="_new" class="decorated">Video Intro<br />to this Page</a>
 			</div>
+
+			<div hidden id="stuffs1">Stuffs1-goes-here</div>
+			<ul id="stuffs2">
+				<li></li>
+			</ul>
 
 			<div id="top-dot" class="reports-type2-charts-container" style="margin-top:70px;">
 				<div style="width: 100px;">

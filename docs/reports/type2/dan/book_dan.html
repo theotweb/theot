@@ -9,6 +9,8 @@
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="../../../style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="../../mycarousel.js"></script>
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
@@ -104,34 +106,7 @@
         </div>
       </div>
 
-      <script>
-        // Returns a Bootstrap modal instance
-        let modal = bootstrap.Modal.getOrCreateInstance(
-          document.getElementById("manuscript-modal")
-        );
-
-        // Show or hide:
-        //modal.show();
-        //modal.hide();
-
-        // Update image in modal
-        function updateModal(e) {
-          console.log("updateModel ", e.target.src);
-          document.getElementById("manuscript-modal-body").innerHTML =
-            "<img src=" + e.target.src + " class='d-block w-100' alt='...'>";
-          //document.getElementById('manuscript-modal-title').innerHTML = "";
-        }
-        function updateModalF(e) {
-          // bel.jpg is thumbnail, fbel.jpg is full size
-          //
-          afile = e.target.src;
-          i = afile.lastIndexOf("/");
-          f2 = afile.slice(0, i + 1) + "f" + afile.slice(i + 1);
-          document.getElementById("manuscript-modal-body").innerHTML =
-            "<img src=" + f2 + " class='d-block w-100' alt='...'>";
-        }
-      </script>
-
+      <script src="../../modals.js"></script>
       <div style="
             margin-right: 20px;
             background-color: rgb(61, 111, 88);
@@ -139,34 +114,15 @@
             border-radius: 25px;
           ">
         <div id="manuscriptCarousel" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="0" aria-label="Slide 1"
-              aria-current="true" class="active"></button>
-            <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
+          <div id="carousel-indicators" class="carousel-indicators">
+            <!-- insert of happiness -->
+            <div></div>
           </div>
-          <div class="carousel-inner" style="height: 200px">
-            <div class="carousel-item active">
-              <img src="Dan_01.jpg" class="d-inline-block h-50" alt="..."
-                onClick="updateModalF(event); modal.show();" />
-            </div>
-            <div class="carousel-item">
-              <img src="Dan_02.jpg" class="d-inline-block h-50" alt="..."
-                onClick="updateModalF(event); modal.show();" />
-            </div>
-            <div class="carousel-item">
-              <img src="Dan_03.jpg" class="d-inline-block h-50" alt="..."
-                onClick="updateModalF(event); modal.show();" />
-            </div>
-            <div class="carousel-item">
-              <img src="Dan_04.jpg" class="d-inline-block h-50" alt="..."
-                onClick="updateModalF(event); modal.show();" />
-            </div>
+          <div id="carousel-inner" class="carousel-inner" style="height: 250px">
+            <!-- insert of happiness 2 -->
+            <div></div>
           </div>
+
           <button class="carousel-control-prev" type="button" data-bs-target="#manuscriptCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -193,7 +149,10 @@
           ">
         <a href="#" target="_new" class="decorated">Video Intro<br />to this Page</a>
       </div>
-
+      <div hidden id="stuffs1">Stuffs1-goes-here</div>
+      <ul id="stuffs2">
+        <li></li>
+      </ul>
       <div id="top-dot" class="reports-type2-charts-container" style="margin-top: 70px">
         <div style="width: 100px">
           Aligned<br />Texts<br />
