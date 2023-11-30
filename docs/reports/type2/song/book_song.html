@@ -9,7 +9,9 @@
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="../../../style.css" />
-  <script src="utility.js"></script>
+  <!-- dynamic_carousel_1 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="../../mycarousel.js"></script>
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
@@ -105,34 +107,9 @@
         </div>
       </div>
 
-      <script>
-        // Returns a Bootstrap modal instance
-        let modal = bootstrap.Modal.getOrCreateInstance(
-          document.getElementById("manuscript-modal")
-        );
+      <!-- dynamic_carousel_2 -->
+      <script src="../../modals.js"></script>
 
-        // Show or hide:
-        //modal.show();
-        //modal.hide();
-
-        // Update image in modal
-        function updateModal(e) {
-          document.getElementById("manuscript-modal-body").innerHTML =
-            "<img src=" + e.target.src + " class='d-block w-100' alt='...'>";
-          //document.getElementById('manuscript-modal-title').innerHTML = "";
-        }
-        function updateModalF(e) {
-          // bel.jpg is thumbnail, fbel.jpg is full size
-          //
-          afile = e.target.src;
-          i = afile.lastIndexOf("/");
-          f2 = afile.slice(0, i + 1) + "f" + afile.slice(i + 1);
-          // console.log('   newfile: ', f2)
-          document.getElementById("manuscript-modal-body").innerHTML =
-            "<img src=" + f2 + " class='d-block w-100' alt='...'>";
-          //document.getElementById('manuscript-modal-title').innerHTML = "";
-        }
-      </script>
 
       <div style="
             margin-right: 20px;
@@ -140,75 +117,17 @@
             padding: 20px;
             border-radius: 25px;
           ">
+        <!-- dynamic_carousel_3 -->
         <div id="manuscriptCarousel" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="4"
-              aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="5"
-              aria-label="Slide 6"></button>
-            <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="6"
-              aria-label="Slide 7"></button>
-            <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="7"
-              aria-label="Slide 8"></button>
-            <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="8"
-              aria-label="Slide 9"></button>
-            <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="9"
-              aria-label="Slide 10"></button>
-            <button type="button" data-bs-target="#manuscriptCarousel" data-bs-slide-to="10"
-              aria-label="Slide 11"></button>
+          <div id="carousel-indicators" class="carousel-indicators">
+            <!-- insert of happiness -->
+            <div></div>
+          </div>
+          <div id="carousel-inner" class="carousel-inner" style="height: 250px">
+            <!-- insert of happiness 2 -->
+            <div></div>
           </div>
 
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Song of Songs Graphic1.jpg" class="d-block w-100" alt="..."
-                onClick="updateModal(event); modal.show();" />
-            </div>
-            <div class="carousel-item">
-              <img src="Song of Songs Graphic2.jpg" class="d-block w-100" alt="..."
-                onClick="updateModal(event); modal.show();" />
-            </div>
-            <div class="carousel-item">
-              <img src="Song of Songs Graphic3.jpg" class="d-block w-100" alt="..."
-                onClick="updateModal(event); modal.show();" />
-            </div>
-
-            <div class="carousel-item">
-              <img src="Song_EMIP12.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();" />
-            </div>
-            <div class="carousel-item">
-              <img src="Song_EMIP112.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();" />
-            </div>
-            <div class="carousel-item">
-              <img src="Song_EMIP175.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();" />
-            </div>
-            <div class="carousel-item">
-              <img src="Song_EMIP752.jpg" class="d-block w-100" alt="..." onClick="updateModal(event); modal.show();" />
-            </div>
-            <div class="carousel-item">
-              <img src="Song_EMIP2007.jpg" class="d-block w-100" alt="..."
-                onClick="updateModal(event); modal.show();" />
-            </div>
-            <div class="carousel-item">
-              <img src="Song_EMIP2290.jpg" class="d-block w-100" alt="..."
-                onClick="updateModal(event); modal.show();" />
-            </div>
-            <div class="carousel-item">
-              <img src="Song_EMIP2290_2.jpg" class="d-block w-100" alt="..."
-                onClick="updateModal(event); modal.show();" />
-            </div>
-            <div class="carousel-item">
-              <img src="Song_EMML2064.jpg" class="d-block w-100" alt="..."
-                onClick="updateModal(event); modal.show();" />
-            </div>
-          </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#manuscriptCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -246,6 +165,14 @@
           ">
         <a href="#" target="_new" class="decorated">Video Intro<br />to this Page</a>
       </div>
+
+
+      <!-- dynamic_carousel_4 -->
+      <div hidden id="stuffs1">Stuffs1-goes-here</div>
+      <ul id="stuffs2">
+        <li></li>
+      </ul>
+
 
       <div id="top-dot" class="reports-type2-charts-container" style="margin-top: 70px">
         <div style="width: 100px">
