@@ -196,3 +196,7 @@ p.juicy-quote {
 .flex-child:first-child {
   margin-right: 20px;
 }  
+
+th, td {
+  padding: 15px;
+}
