@@ -45,5 +45,5 @@ $(document).ready(function () {
   $("#stuffs1").load("carousel.txt");
   setTimeout(() => {
     nerf();
-  }, 1000);
+  }, 500);
 });
