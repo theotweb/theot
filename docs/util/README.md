@@ -15,15 +15,15 @@ Most books have 3-character abbreviation. Exceptions include canticles, epjer, p
 ├── book_bel.html
 ├── carousel.txt
 └── manuscripts
-├── Ethiopic Dan_01.jpg
-├── Ethiopic Dan_02.jpg
-├── Ethiopic Dan_03.jpg
-├── Ethiopic Dan_04.jpg
-└── t
-├── thumb_Ethiopic Dan_01.jpg
-├── thumb_Ethiopic Dan_02.jpg
-├── thumb_Ethiopic Dan_03.jpg
-└── thumb_Ethiopic Dan_04.jpg
+   ├── Ethiopic Dan_01.jpg
+   ├── Ethiopic Dan_02.jpg
+   ├── Ethiopic Dan_03.jpg
+   ├── Ethiopic Dan_04.jpg
+   └── t
+      ├── thumb_Ethiopic Dan_01.jpg
+      ├── thumb_Ethiopic Dan_02.jpg
+      ├── thumb_Ethiopic Dan_03.jpg
+      └── thumb_Ethiopic Dan_04.jpg
 
 3 directories, 13 files
 ╭─~/Documents/data/projects_current/THEOT/web/theot/docs/reports/type2/bel
