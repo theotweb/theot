@@ -5,6 +5,7 @@
 Book folders tend to be organized like this "Bel and the Dragon" whose folder is named "bel"
 Most books have 3-character abbreviation. Exceptions include canticles, epjer, psa151, ruth, three.
 
+```
 ╭─~/docs/reports/type2/bel on main✘✘✘ 23-12-14 15:35
 ╰─⠠⠵ tree
 .
@@ -26,12 +27,16 @@ Most books have 3-character abbreviation. Exceptions include canticles, epjer, p
 
 3 directories, 13 files
 ╭─~/Documents/data/projects_current/THEOT/web/theot/docs/reports/type2/bel
+```
 
 In this case, carousel.txt contains
+
+```
 Ethiopic Dan_01.jpg
 Ethiopic Dan_02.jpg
 Ethiopic Dan_03.jpg
 Ethiopic Dan_04.jpg
+```
 
 This means that at runtime, the "thumbnail" version of these four files will be loaded into the carousel.
 Upon click, the full-sized image will be shown.
