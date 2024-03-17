@@ -1,211 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <title>THEOT</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="../../../style.css" />
-  <!-- dynamic_carousel_1 -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="../../mycarousel.js"></script>
+	<title>THEOT</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="../../../style.css">
+	<!-- dynamic_carousel_1 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="../../mycarousel.js"></script>
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
-  <!-- BEGIN HEADER -->
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark masthead">
-    <div class="container-fluid">
-      <!-- It has to have something here for the nav to float right -->
-      <span style="width: 600px; height: 100px">&nbsp;</span>
+	<!-- BEGIN HEADER -->
 
-      <div class="ml-auto">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark masthead">
+		<div class="container-fluid">
 
-        <div class="theot-header">
-          <a href="../../../index.html"><img src="../../../img/theot-logo-white.png" /></a>
-        </div>
-
-        <div style="position: relative; top: 50px" class="collapse navbar-collapse gx-3" id="navbarNavDropdown">
-          <ul class="navbar-nav gx-3">
-            <li class="nav-item">
-              <a class="nav-link decorated-header" href="../../../about.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link active2 decorated-header" aria-current="page" href="../../../reports.html">
-                <center>Reports</center>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link decorated-header" href="../../../tools.html">
-                <center>Tools</center>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link decorated-header" href="../../../methods.html">Methods</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link decorated-header" href="../../../manuscripts.html">Manuscripts</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <div>&nbsp;</div>
-
-  <!-- END HEADER -->
-
-  <div class="secondary-page-body">
-    <div style="width: 25%">
-      <div style="margin-right: 20px; padding: 20px; border-radius: 25px">
-        <h1>
-          Materials for the <br />
-          Study of Ethiopic <br />
-          Epistle of Jeremiah
-        </h1>
-
-        <br />
-
-        <p class="juicy-quote">We...</p>
-        <div style="margin-left: 15px">
-          <p class="juicy-quote">Turn text into numbers.</p>
-
-          <p class="juicy-quote">Identify patterns in the numbers.</p>
-
-          <p class="juicy-quote">Turn numbers into stories.</p>
-        </div>
-      </div>
-
-      <!-- Manuscript Carousel -->
-
-      <!-- Modal -->
-      <div class="modal modal-xl fade" id="manuscript-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="manuscript-modal-title">
-                Manuscript
-              </h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body" id="manuscript-modal-body">...</div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- dynamic_carousel_2 -->
-      <script src="../../modals.js"></script>
+			<!-- It has to have something here for the nav to float right -->
+			<span style="width:600px; height:100px;">&nbsp;</span>
 
 
-      <div style="
-            margin-right: 20px;
-            background-color: rgb(61, 111, 88);
-            padding: 20px;
-            border-radius: 25px;
-          ">
+			<div class="ml-auto">
 
-        <!-- dynamic_carousel_3 -->
-        <div id="manuscriptCarousel" class="carousel slide">
-          <div id="carousel-indicators" class="carousel-indicators">
-            <!-- insert of happiness -->
-            <div></div>
-          </div>
-          <div id="carousel-inner" class="carousel-inner">
-            <!-- insert of happiness 2 -->
-            <div></div>
-          </div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#manuscriptCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#manuscriptCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+				<div class="theot-header">
+					<a href="../../../index.html"><img src="../../../img/theot-logo-white.png"></a>
+				</div>
 
-        <h3 class="overlayc">Ethiopic Epistle of Jeremiah</h3>
-        <p class="overlayc">Click center of images to enlarge.</p>
-      </div>
-    </div>
+				<div style="position:relative;top:50px;" class="collapse navbar-collapse gx-3" id="navbarNavDropdown">
+					<ul class="navbar-nav gx-3">
+						<li class="nav-item">
+							<a class="nav-link decorated-header" href="../../../about.html">About</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link active2 decorated-header" aria-current="page"
+								href="../../../reports.html">
+								<center>Reports</center>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link decorated-header" href="../../../tools.html">
+								<center>Tools</center>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link decorated-header" href="../../../methods.html">Methods</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link decorated-header" href="../../../manuscripts.html">Manuscripts</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
 
-    <div class="theot-body">
-      <div style="
-            position: relative;
-            float: left;
-            margin-right: 30px;
-            height: 600px;
-          ">
-        <a href="#" target="_new" class="decorated">Video Intro<br />to this Page</a>
-      </div>
+	<div>&nbsp;</div>
 
-
-      <!-- dynamic_carousel_4 -->
-      <div hidden id="stuffs1">Stuffs1-goes-here</div>
-      <ul id="stuffs2">
-        <li></li>
-      </ul>
+	<!-- END HEADER -->
 
 
-      <div id="top-dot" class="reports-type2-charts-container" style="margin-top: 70px">
-        <div style="width: 100px">
-          Aligned<br />Texts<br />
-          <a href="#" target="_new" class="decorated">Video</a>
-        </div>
-        <div>
-          <a href="EpJer-dot.pdf" target="_new"><img src="EpJer-dot.jpg" height="175" /></a>
-          <center><i>Click to Enlarge</i></center>
-        </div>
-        <div style="width: 100px">
-          <center>
-            <i>Be sure to explore the textual data in the THEOT Text Viewer</i>
-          </center>
-        </div>
-      </div>
+	<div class="secondary-page-body">
 
-      <br />
+		<div style="width: 25%">
+			<div style="margin-right:20px; padding:20px; border-radius: 25px;">
 
-      <div id="top-den" class="reports-type2-charts-container">
-        <div style="width: 100px">
-          Dendrogram<br />
-          <a href="#" target="_new" class="decorated">Video</a>
-        </div>
-        <div>
-          <img src="EpJer-den.jpg" height="175" style="cursor: pointer" onClick="updateModal(event); modal.show();" />
-          <center><i>Click to Enlarge</i></center>
-        </div>
-      </div>
+				<h1>Materials for the <br /> Study of Ethiopic <br /> Epistle of Jeremiah</h1>
 
-      <br />
+				<br />
 
-      <div id="top-chart" class="reports-type2-charts-container">
-        <div style="width: 100px">
-          Chart<br />
-          <a href="#" target="_new" class="decorated">Video</a>
-        </div>
-        <div>
-          <img src="../../CS-chart.png" height="175" style="cursor: pointer"
-            onClick="updateModal(event); modal.show();" />
-          <center><i>Click to Enlarge</i></center>
-        </div>
-      </div>
+				<p class="juicy-quote">We...</p>
+				<div style="margin-left: 15px;">
+					<p class="juicy-quote">Turn text into numbers.</p>
 
-      <br /><br />
+					<p class="juicy-quote">Identify patterns in the numbers.</p>
+
+					<p class="juicy-quote">Turn numbers into stories.</p>
+				</div>
+			</div>
+
+			<!-- Manuscript Carousel -->
+
+			<!-- Modal -->
+			<div class="modal modal-xl fade" id="manuscript-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="manuscript-modal-title">Manuscript</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body" id="manuscript-modal-body">
+							...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- dynamic_carousel_2 -->
+			<script src="../../modals.js"></script>
+
+
+			<div style="margin-right:20px; background-color:rgb(61, 111, 88); padding:20px; border-radius: 25px;">
+
+
+				<!-- dynamic_carousel_3 -->
+				<div id="manuscriptCarousel" class="carousel slide">
+					<div id="carousel-indicators" class="carousel-indicators">
+						<!-- insert of happiness -->
+						<div></div>
+					</div>
+					<div id="carousel-inner" class="carousel-inner">
+						<!-- insert of happiness 2 -->
+						<div></div>
+					</div>
+
+					<button class="carousel-control-prev" type="button" data-bs-target="#manuscriptCarousel"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#manuscriptCarousel"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+
+				<!-- margin: auto -->
+				<h3 class="overlayc">Ethiopic Epistle of Jeremiah</h3>
+				<p class="overlayc">Click center of images to enlarge.</p>
+
+			</div>
+		</div>
+
+		<div class="theot-body">
+
+			<div style="position:relative; float:left; margin-right:30px; height:600px;">
+				<a href="#" target="_new" class="decorated">Video Intro<br />to this Page</a>
+			</div>
+
+			<!-- dynamic_carousel_4 -->
+			<div hidden id="stuffs1">Stuffs1-goes-here</div>
+			<ul id="stuffs2">
+				<li></li>
+			</ul>
+
+
+			<div id="top-dot" class="reports-type2-charts-container" style="margin-top:70px;">
+				<div style="width: 100px;">
+					Aligned<br />Texts<br />
+					<a href="#" target="_new" class="decorated">Video</a>
+				</div>
+				<div>
+					<a href="EpJer - dot, draft 11.pdf" target="_new"><img src="EpJer - dot, draft 11 THUMB.jpg" height="175" /></a>
+					<center><i>Click to Enlarge</i></center>
+				</div>
+				<div style="width:100px;">
+					<center><i>Be sure to explore the textual data in the THEOT Text Viewer</i></center>
+				</div>
+			</div>
+
+			<br />
+
+			<div id="top-den" class="reports-type2-charts-container">
+				<div style="width: 100px;">
+					Dendrogram<br />
+					<a href="#" target="_new" class="decorated">Video</a>
+				</div>
+				<div>
+					<img src="EpJer - den, draft 11.jpg" height="175" style="cursor: pointer;"
+						onClick="updateModal(event); modal.show();" />
+					<center><i>Click to Enlarge</i></center>
+				</div>
+			</div>
+
+			<br />
+
+			<div id="top-chart" class="reports-type2-charts-container">
+				<div style="width: 100px;">
+					Chart<br />
+					<a href="#" target="_new" class="decorated">Video</a>
+				</div>
+				<div>
+					<img src="../../CS-chart.png" height="175" style="cursor: pointer;"
+						onClick="updateModal(event); modal.show();" />
+					<center><i>Click to Enlarge</i></center>
+				</div>
+			</div>
+
+			<br /><br />
 
       <p>Epistle of Jeremiah</p>
 
@@ -217,37 +214,27 @@
 
       <!-- Code from Google Sheets inserted here -->
 
-      <!-- End code from Google Sheets -->
-    </div>
-  </div>
 
-  <!-- BEGIN FOOTER -->
+			<!-- End code from Google Sheets -->
+		</div>
+	</div>
 
-  <div style="
-        position: relative;
-        top: 400px;
-        width: 105%;
-        height: auto;
-        margin: -35px;
-        padding: 0;
-      ">
-    <img src="../../../img/footer-we.png" width="100%" />
-  </div>
+	<!-- BEGIN FOOTER -->
 
-  <br />
+	<div style="position:relative; top: 400px; width:105%; height: auto; margin:-35px; padding:0;">
+		<img src="../../../img/footer-we.png" width=100%>
+	</div>
 
-  <div style="
-        width: 450px;
-        height: 140px;
-        margin: auto;
-        position: relative;
-        top: 450px;
-      ">
-    <img src="../../../img/logo-EMIP.png" style="float: left; min-width: unset; margin-left: 10px" />
-    <img src="../../../img/logo-NEH.png" style="float: left; min-width: unset; margin-left: 10px" />
-  </div>
+	<br />
 
-  <!-- END FOOTER -->
+	<div style="width:450px; height:140px; margin:auto; position:relative; top:450px;">
+		<img src="../../../img/logo-EMIP.png" style="float:left; min-width:unset; margin-left:10px;" />
+		<img src="../../../img/logo-NEH.png" style="float:left; min-width:unset; margin-left:10px;" />
+	</div>
+
+	<!-- END FOOTER -->
+
+
 </body>
 
 </html>
