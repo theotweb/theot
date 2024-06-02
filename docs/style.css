@@ -143,7 +143,12 @@ a.active2 {
 p.juicy-quote { 
   font-family: "Apple Chancery", "American Typewriter", "Georgia", serif;
   font-size:150%;
- }
+}
+
+div.juicy-quote { 
+  font-family: "Apple Chancery", "American Typewriter", "Georgia", serif;
+  font-size:150%;
+}
 
 .reports-type1-charts-container {
   display: flex;
