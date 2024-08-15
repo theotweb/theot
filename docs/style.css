@@ -177,6 +177,12 @@ div.juicy-quote {
   margin-bottom: auto;
 }
 
+.reports-type1-container-b {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+
 .float-container {
   border: 6px solid #fff;
   padding: 20px;
