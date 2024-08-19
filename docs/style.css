@@ -150,6 +150,11 @@ div.juicy-quote {
   font-size:150%;
 }
 
+div.juicy-quote-b { 
+  font-family: "Apple Chancery", "American Typewriter", "Georgia", serif;
+  font-size:140%;
+}
+
 .reports-type1-charts-container {
   display: flex;
   flex-wrap: nowrap;
