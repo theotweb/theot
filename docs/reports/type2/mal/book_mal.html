@@ -1,155 +1,337 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <title>THEOT</title>
+	<title>THEOT</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 	<link rel="stylesheet" href="../../../style.css">
-  <!-- dynamic_carousel_1 -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="../../mycarousel.js"></script>
+	<!-- dynamic_carousel_1 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="../../mycarousel.js"></script>
+
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
-  <!-- BEGIN HEADER -->
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark masthead">
-    <div class="container-fluid">
-      <!-- It has to have something here for the nav to float right -->
+	<!-- BEGIN HEADER -->
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark masthead">
+		<div class="container-fluid">
+
+			<!-- It has to have something here for the nav to float right -->
 			<span style="width:600px; height:100px;">&nbsp;</span>
 
-      <div class="ml-auto">
+
+			<div class="ml-auto">
+
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
 					aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-        <div class="theot-header">
-					<a href="../../../index.html"><img src="../../../img/theot-logo-white.png"></a>
-        </div>
+				<div class="theot-header">
+					<a href="index.html"><img src="../../../img/theot-logo-white.png"></a>
+				</div>
 
 				<div style="position:relative;top:50px;" class="collapse navbar-collapse gx-3" id="navbarNavDropdown">
-          <ul class="navbar-nav gx-3">
-            <li class="nav-item">
-              <a class="nav-link decorated-header" href="../../../about.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
+					<ul class="navbar-nav gx-3">
+						<li class="nav-item">
+							<a class="nav-link decorated-header" href="../../../about.html">About</a>
+						</li>
+						<li class="nav-item dropdown">
 							<a class="nav-link active2 decorated-header" aria-current="page"
 								href="../../../reports.html">
-                <center>Reports</center>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link decorated-header" href="../../../tools.html">
-                <center>Tools</center>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link decorated-header" href="../../../methods.html">Methods</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link decorated-header" href="../../../manuscripts.html">Manuscripts</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
+								<center>Reports</center>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link decorated-header" href="../../../tools.html">
+								<center>Tools</center>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link decorated-header" href="../../../methods.html">Methods</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link decorated-header" href="../../../manuscripts.html">Manuscripts</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
 
-  <div>&nbsp;</div>
+	<div>&nbsp;</div>
 
-  <!-- END HEADER -->
+	<!-- END HEADER -->
 
-  <div class="secondary-page-body">
-    <div style="width: 25%">
+
+	<div class="secondary-page-body">
+
+		<div style="width: 25%">
 			<div style="margin-right:20px; padding:20px; border-radius: 25px;">
 
 				<h1>Materials for the <br /> Study of Ethiopic <br /> Malachi</h1>
 
-        <br />
+				<br />
 
-        <p class="juicy-quote">We...</p>
+				<p class="juicy-quote">We...</p>
 				<div style="margin-left: 15px;">
-          <p class="juicy-quote">Turn text into numbers.</p>
+					<p class="juicy-quote">Turn text into numbers.</p>
 
-          <p class="juicy-quote">Identify patterns in the numbers.</p>
+					<p class="juicy-quote">Identify patterns in the numbers.</p>
 
-          <p class="juicy-quote">Turn numbers into stories.</p>
-        </div>
-      </div>
+					<p class="juicy-quote">Turn numbers into stories.</p>
+				</div>
+			</div>
 
-      <!-- Manuscript Carousel -->
+			<!-- Manuscript Carousel -->
 
-      <!-- Modal -->
-      <div class="modal modal-xl fade" id="manuscript-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
+			<!-- Modal -->
+			<div class="modal modal-xl fade" id="manuscript-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+				aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
 							<h1 class="modal-title fs-5" id="manuscript-modal-title">Manuscript</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
 						<div class="modal-body" id="manuscript-modal-body">
 							...
 						</div>
-            <div class="modal-footer">
+						<div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-      <!-- dynamic_carousel_2 -->
-      <script src="../../modals.js"></script>
+			<!-- dynamic_carousel_2 -->
+			<script src="../../modals.js"></script>
+
 
 			<div style="margin-right:20px; background-color:rgb(61, 111, 88); padding:20px; border-radius: 25px;">
 
-        <!-- dynamic_carousel_3 -->
-        <div id="manuscriptCarousel" class="carousel slide">
-          <div id="carousel-indicators" class="carousel-indicators">
-            <!-- insert of happiness -->
-            <div></div>
-          </div>
-          <div id="carousel-inner" class="carousel-inner">
-            <!-- insert of happiness 2 -->
-            <div></div>
-          </div>
+
+				<!-- dynamic_carousel_3 -->
+				<div id="manuscriptCarousel" class="carousel slide">
+					<div id="carousel-indicators" class="carousel-indicators">
+						<!-- insert of happiness -->
+						<div></div>
+					</div>
+					<div id="carousel-inner" class="carousel-inner">
+						<!-- insert of happiness 2 -->
+						<div></div>
+					</div>
 
 					<button class="carousel-control-prev" type="button" data-bs-target="#manuscriptCarousel"
 						data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
 					<button class="carousel-control-next" type="button" data-bs-target="#manuscriptCarousel"
 						data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
 
 				<h3 class="overlayc">Ethiopic Malachi</h3>
 				<p class="overlayc">Click center of images to enlarge. </p>
 
+			</div>
+		</div>
+
+		<div class="theot-body">
+
+			<iframe width="250" height="175"
+               	src="https://www.youtube.com/embed/wIjKqLEHIPI">
+			</iframe>
+			<div style="position:relative; float:left; margin-right:60px; height:200px;">
+				<div class="juicy-quote">Video Intro<br />to this Page</div>
+			</div>
+
+			<!-- dynamic_carousel_4 -->
+			<div hidden id="stuffs1">Stuffs1-goes-here</div>
+			<ul id="stuffs2">
+				<li></li>
+			</ul>
+
+			<div id="top-dot" class="reports-type1-container-b" style="margin-top:70px;">
+				<div style="width: 150px;">
+					<div class="juicy-quote">
+						Aligned<br />Texts<br />
+					</div>
+				</div>
+				<div style="margin-right:30px;">
+					<a href="Malachi - dot, draft 12.pdf" target="_new"><img src="Malachi - dot, draft 12 THUMB.jpg" height="175" /></a>
+					<center><i>Click to Enlarge</i></center>
+				</div>
+				<iframe width="250" height="175"
+					src="https://www.youtube.com/embed/hn6T6sUgDhg"></iframe>
+				</iframe>
+				<div style="width:300px; margin-left:20px;">
+					<i>
+						The PDF is a copy of the document file in which we aligned all the words of all the manuscripts in this study. Click the image on the left to download the pdf file. Click the image on the right to see a video explaining how this data was produced or processed.
+					</i>
+				</div>
+			</div>
+
+			<br />
+
+
+			<div id="top-var" class="reports-type1-container-b">
+				<div style="width: 150px;">
+					<div class="juicy-quote">
+						Variants<br />
+					</div>
+				</div>
+				<div style="margin-right:30px;">
+					<a href=""
+					 target="_new"><img src="../../var THUMB.jpg" height="175" width="250"/></a>
+					<center><i>Click to Enlarge</i></center>
+				</div>
+				<iframe width="250" height="175"
+                	src="https://www.youtube.com/embed/pjLYoMPzT8s">
+				</iframe>
+				<div style="width:300px; margin-left:20px;">
+					<i>
+						The spreadsheet shows the data produced by the THEOT script labeled “create database of variants”. Click the image on the left to open a copy of the spreadsheet. Click the image on the right to see a video explaining how this data was produced or processed.
+					</i>
+				</div>
+			</div>
+
+			<br />
+
+			<div id="top-wpm" class="reports-type1-container-b">
+				<div style="width: 150px;">
+					<div class="juicy-quote">
+						Words<br />Profile<br />Match<br />
+					</div>
+				</div>
+				<div style="margin-right:30px;">
+					<a href=""
+						 target="_new"><img src="../../wpm THUMB.jpg" height="175" width="250"/></a>
+					<center><i>Click to Enlarge</i></center>
+				</div>
+				<iframe width="250" height="175"
+					src="https://www.youtube.com/embed/80buwe252sU">
+				</iframe>
+				<div style="width:300px; margin-left:20px;">
+					<i>
+						The spreadsheet shows the data produced by the THEOT script labeled “process database of variants”. Click the image on the left to open a copy of the spreadsheet. Click the image on the right to see a video explaining how this data was produced or processed.	
+					</i>
+				</div>
+			</div>
+
+			<br />
+
+			<div id="top-den" class="reports-type1-container-b">
+				<div style="width: 150px;">
+					<div class="juicy-quote">
+						Dendrogram<br />
+					</div>
+				</div>
+				<div style="margin-right:30px;">
+          <img src="Malachi - den, draft 12, rev 2.jpg" height="175" width="250" style="cursor: pointer;"
+						onClick="updateModal(event); modal.show();" />
+					<center><i>Click to Enlarge</i></center>
+				</div>
+				<iframe width="250" height="175"
+					src="https://www.youtube.com/embed/563fYuTsrBw">
+				</iframe>
+				<div style="width:300px; margin-left:20px;">
+					<i>
+						The jpeg shows the Dendrogram produced by feeding the R file and a CSV (comma separated values) file into the R program to generate a dendrogram.  The colored boxes and stars represent our interpretation of the dendrogram, and become our working hypothesis for investigation of the book. Click the image on the left the dendrogram. Click the image on the right to see a video on THEOT Dendrograms and How to Use them.
+					</i>
+				</div>
+			</div>
+
+			<br />
+
+			<div id="top-ttv" class="reports-type1-container-b">
+				<div style="width: 150px;">
+					<div class="juicy-quote">
+						THEOT<br />Text<br />Viewer<br />
+					</div>
+				</div>
+				<div style="margin-right:30px;">
+					<a href="https://ethiopic-tool.firebaseapp.com?otBook=Malachi"
+					 target="_new"><img src="../../ttv THUMB.jpg" height="175" width="250"/></a>
+					<center><i>Click to Access Text Viewer</i></center>
+				</div>
+				<iframe width="250" height="175"
+					src="https://www.youtube.com/embed/ApZLtbVbFwk">
+				</iframe>
+				<div style="width:300px; margin-left:20px;">
+					<i>
+						These links explore the THEOT Text Viewer and How to Use It. Click the image on the left to open the website directly. Click the image on the right to see a video introducing the Text Viewer and How to Use it. 
+					</i>
+				</div>
+			</div>
+
+			<br />
+
+			<div id="top-rep" class="reports-type1-container-b">
+				<div style="width: 150px;">
+					<div class="juicy-quote-b">
+						Best<br />Representative<br />Manuscripts<br />
+					</div>
+				</div>
+				<div style="margin-right:30px;">
+					<a href=""
+					 target="_new"><img src="../../bestrep THUMB.jpg" height="175" width="250"/></a>
+					<center><i>Click to Enlarge</i></center>
+				</div>
+				<iframe width="250" height="175"
+					src="https://www.youtube.com/embed/xc0PjuSFUWY">
+				</iframe>
+				<div style="width:300px; margin-left:20px;">
+					<i>
+						The spreadsheet shows a series of tabs that represent the various stages of processing the data with a view of identifying the best representative manuscript for each cluster.  Click the image on the left to open a copy of the spreadsheet. Click the image on the right to see a video explaining how this data was produced or processed.
+					</i>
+				</div>
+			</div>
+
+			<br />
+
+			<hr>
+
+      <div>
+        <b>Malachi: Sample, Best Representatives, Minor Recensions, Other Studies</b>
+        <ul>
+          <li>
+            Sample of the Text: Mal 1:4-6, 10-12, 14; 2:1-3, 7, 12-16; 3:1-2, 5-10, 14-15; 4:1, 4-5.
+          </li><li>
+            Sample Size: 59.5% of the book.
+          </li><li>
+            Sample of Manuscripts: 34. Hunt625 (14th), EMIP0746 (1719), EMIP0881 (17th), EMIP1029 (15/16), EMIP1063 (19/20), EMIP1070 (1914), EMIP1095 (19th), EMIP2007 (18th), IES077 (20th), IES436 (15/16), EMML36 (L18/e19), EMML1481 (e17), EMML1768 (L15), EMML6686 (17th), Cerulli75 (1930), AxumZion (15th), UN10.04 (17/18), UN10.65 (18/19), UN10.34 (19th), EMIP0949 (20th), PrinceGarEth7 (17th), Cam1570 (1588/9), EMML7584 (16th), GG152 (16th), EMML6930 (18th), GG106 (~1694), EMML349 (1923), EMML1842 (1662), EMML2080 (16th), EMML2440 (1663), EMML8934 (14th), Abb35 (17th), Abb55_15/16), JE5E (19th).
+          </li><li>
+            Number of Data Points Generated: 37,026. 
+          </li><li>
+            EA1 Best Representative – Bod Hunt 625 (14th) and GG152 (16th) both represent the cluster well. Here is a transcription of the manuscript.
+          </li><li>
+            EA2 Best Representative – EMML 1768 (l15th). Here is a transcription of the manuscript.
+          </li><li>
+            Stan1 Best Representative – GG 106 (1694) and EMIP 746 (1719) both represent the cluster well. Here is a transcription of the manuscript.
+          </li><li>
+            Stan2 Best Representative – EMML 349 (1923). Here is a transcription of the manuscript
+          </li><li>
+            Stan3 Best Representative – EMML 1481 (e17th) and BNAbb35 (17th) both represent the cluster well. Here is a transcription of the manuscript.
+          </li><li>
+            MTR Best Representative – IES 77 (1934). Here is a transcription of the manuscript.
+          </li><li>
+            Minor Recensions: EMIP 949 (e20th), UNESCO 10.34 (1931), and EMML 7942 (20th, the latter is not part of this sample). represent a minor recension, translated from the Latin Vulgate, with a 55% degree of difference from the rest of the tradition.
+          </li>
+        </ul>
       </div>
-    </div>
 
-    <div class="theot-body">
-
-			<div style="position:relative; float:left; margin-right:30px; height:600px;">
-        <a href="#" target="_new" class="decorated">Video Intro<br />to this Page</a>
-      </div>
-
-      <!-- dynamic_carousel_4 -->
-      <div hidden id="stuffs1">Stuffs1-goes-here</div>
-      <ul id="stuffs2">
-        <li></li>
-      </ul>
-
+			<!-- <hr style="height:20px;">
 			<div id="top-dot" class="reports-type2-charts-container" style="margin-top:70px;">
 				<div style="width: 100px;">
           Aligned<br />Texts<br />
@@ -192,41 +374,30 @@
         </div>
       </div>
 
-      <br /><br />
+      <br /><br /> -->
 
-      <!-- Code from Google Sheets inserted here -->
+			<!-- Code from Google Sheets inserted here -->
 
-      <!-- End code from Google Sheets -->
-    </div>
-  </div>
 
-  <!-- BEGIN FOOTER -->
+			<!-- End code from Google Sheets -->
+		</div>
+	</div>
 
-  <div style="
-        position: relative;
-        top: 400px;
-        width: 105%;
-        height: auto;
-        margin: -35px;
-        padding: 0;
-      ">
-    <img src="../../../img/footer-we.png" width="100%" />
-  </div>
+	<!-- BEGIN FOOTER -->
 
-  <br />
+	<div style="position:relative; top: 400px; width:105%; height: auto; margin:-35px; padding:0;">
+		<img src="../../../img/footer-we.png" width=100%>
+	</div>
 
-  <div style="
-        width: 450px;
-        height: 140px;
-        margin: auto;
-        position: relative;
-        top: 450px;
-      ">
-    <img src="../../../img/logo-EMIP.png" style="float: left; min-width: unset; margin-left: 10px" />
-    <img src="../../../img/logo-NEH.png" style="float: left; min-width: unset; margin-left: 10px" />
-  </div>
+	<br />
 
-  <!-- END FOOTER -->
+	<div style="width:450px; height:140px; margin:auto; position:relative; top:450px;">
+		<img src="../../../img/logo-EMIP.png" style="float:left; min-width:unset; margin-left:10px;" />
+		<img src="../../../img/logo-NEH.png" style="float:left; min-width:unset; margin-left:10px;" />
+	</div>
+
+	<!-- END FOOTER -->
+
 </body>
 
 </html>
