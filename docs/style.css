@@ -29,14 +29,15 @@ div.front-welcome-text {
   width:75%; 
   margin:auto; 
   position:relative; 
-  top:250px;
+  top:200px;
 }
 
 div.front-bands {
-  width:75%; 
+  height: 25%;
+  width: 25%; 
   margin:auto; 
   position:relative; 
-  top:300px;
+  top:200px;
 }
 
 div.front-manuscript-examples {
