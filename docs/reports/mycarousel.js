@@ -1,9 +1,9 @@
 function nerf() {
-  console.log("jquery bnr2");
+  //console.log("jquery bnr2");
   var daString = $("#stuffs1").html();
-  console.log("daString:", daString);
+  //console.log("daString:", daString);
   var daArray = daString.split("\n");
-  console.log("daArray: ", daArray);
+  //console.log("daArray: ", daArray);
   var firstcard = true;
   var indicators = "";
   var inners = "";
