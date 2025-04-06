@@ -11,6 +11,45 @@
 		<script src="utility.js"></script>
 
 	  </head>
+
+	  <body onload="processURLParams()">
+
+		<script>
+		
+		var addExtra = false;
+	
+		function processURLParams()
+		{
+			const searchParams = new URLSearchParams(window.location.search);
+			addTextileLinks = searchParams.get('addTextileLinks');
+			addTextileLinks = (addTextileLinks == 'true');
+			//alert('test2 - ' + addTextileLinks);
+
+			if (addTextileLinks) {
+				x = document.getElementById("textileLink0");
+				x.style.display = "block";
+
+				x = document.getElementById("textileLink1");
+				x.style.display = "block";
+
+				x = document.getElementById("textileLink2");
+				x.style.display = "block";
+
+				x = document.getElementById("textileLink3");
+				x.style.display = "block";
+
+				x = document.getElementById("textileLink4");
+				x.style.display = "block";
+
+				x = document.getElementById("textileLink5");
+				x.style.display = "block";
+			}
+		}
+
+		</script>
+	</body>
+
+
 	  <body class="p-3 m-0 border-0 bd-example">
 
 		<!-- BEGIN HEADER -->
@@ -145,6 +184,82 @@
 							</tr>
 							<tr>
 								<td>Table of Manuscripts by Cluster</td>
+							</tr>
+
+							<tr>
+								<!-- textileLink0, href Google Drive link, src Google Drive link -->
+								<td id = "textileLink0" class="" style="align-items:flex-start;width:50px;margin:10px;display:none">
+          							<a href="https://drive.google.com/file/d/1Hq8rq9eEJAvCzpUAJg6SRv5HJKgtNYBT/view?usp=drive_link"
+									class="decorated" target="_blank">
+            						<img src="https://drive.google.com/file/d/12liaEng75Dv3gRnSG7td72TABXIYk3lp/view" width="10" />
+          							</a>
+        						</td>
+							</tr>
+
+							<tr>
+								<!-- textileLink1, href Google Drive link, src jpg on website -->
+								<td>
+								<div id = "textileLink1" class="" style="align-items:flex-start;width:50px;margin:10px;display:none">
+          							<a href="https://drive.google.com/file/d/1Hq8rq9eEJAvCzpUAJg6SRv5HJKgtNYBT/view?usp=drive_link"
+									class="decorated" target="_blank">
+            						<img src="img/EMDL 0012.jpg" width="10" />
+          							</a>
+        						</div>
+								</td>
+							</tr>
+
+							<tr>
+								<!-- textileLink2, href Google Drive link, src jpg on website -->
+								<td>
+								<div id = "textileLink2" class="" style="align-items:flex-start;width:50px;margin:10px;display:none">
+          							<a href="img/EMDL 0012.jpg"
+									class="decorated" target="_blank">
+            						<img src="img/EMDL 0012.jpg" width="10" />
+          							</a>
+        						</div>
+								</td>
+							</tr>
+
+							<!--
+							
+							from tools.html
+
+							<div class="" style="align-items:flex-start;width:400px;margin:10px">
+								<a href="https://ethiopic-tool.firebaseapp.com/" class="decorated" target="_blank">
+								  <img src="img/tools/Tools_Masthead-THEOT_Text_Viewer.jpg" width="100" />
+								</a>
+							  </div> -->
+
+							<tr>
+								<!-- textileLink3, href Google Drive link, no src specified, just text in anchor tag -->
+								<td id = "textileLink3" style="display:none">
+									<a href="https://drive.google.com/file/d/1Hq8rq9eEJAvCzpUAJg6SRv5HJKgtNYBT/view?usp=drive_link"
+									title="View textile impage" target="_new" class="decorated">EMDL 0012.jpg</a>
+								</td>
+							</tr>
+							<tr>
+								<td id = "textileLink4" style="display:none">
+									<a href="https://drive.google.com/file/d/12liaEng75Dv3gRnSG7td72TABXIYk3lp/view?usp=drive_link"
+									title="View textile impage" target="_new" class="decorated">EMDL 0015 cover.jpg</a>
+								</td>
+							</tr>
+							<tr>
+								<td id = "textileLink5" style="display:none">
+									<a href="https://drive.google.com/file/d/1UTQdX5VVTj3RTgT0VTU-YFYYSQGJLJcj/view?usp=drive_link"
+									title="View textile impage" target="_new" class="decorated">EMDL 0017a cover.jpg</a>
+								</td>
+							</tr>
+							<tr>
+								<td id = "textileLink6" style="display:none">
+									<a href="https://drive.google.com/file/d/1Iy8JynFKxfKySJnSbRmQ7VYtdI6PgBWg/view?usp=drive_link"
+									title="View textile impage" target="_new" class="decorated">EMDL 0017a.jpg</a>
+								</td>
+							</tr>
+							<tr>
+								<td id = "textileLink7" style="display:none">
+									<a href="https://drive.google.com/file/d/1ezMJSvuaBHc_H7uAzPBdfEdGSiOAA3p3/view?usp=drive_link"
+									title="View textile impage" target="_new" class="decorated">EMDL 0021a cover.jpg</a>
+								</td>
 							</tr>
 						<!-- </table>
 							</td>
